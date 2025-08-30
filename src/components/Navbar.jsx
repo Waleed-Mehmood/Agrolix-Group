@@ -80,7 +80,7 @@ const Navbar = () => {
                   <Link
                     to={link.href}
                     className="text-white hover:bg-white hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 relative overflow-hidden group"
-                  >
+              qawsq    >
                     <span className="relative z-10">{link.name}</span>
                     <div className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                   </Link>
