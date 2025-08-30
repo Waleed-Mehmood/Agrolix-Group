@@ -159,16 +159,16 @@ const LogoSlider = () => {
           {logos.map((logo, index) => (
             <div
               key={logo.id}
-              className={`flex-shrink-0 px-2 sm:px-6 py-2 sm:py-4 flex items-center justify-center transition-all duration-300 ${
+              className={`flex-shrink-0 px-2 sm:px-6 py-3 sm:py-4 flex items-center justify-center transition-all duration-300 ${
                 isDragging ? 'scale-95' : 'hover:scale-105'
               }`}
               style={{ width: `${100 / itemsPerView}%` }}
             >
-              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-2 sm:p-4 shadow-md hover:shadow-xl transition-all duration-300 w-full h-20 sm:h-28 flex items-center justify-center group border border-green-200">
+              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-3 sm:p-4 shadow-md hover:shadow-xl transition-all duration-300 w-full h-24 sm:h-28 flex items-center justify-center group border border-green-200">
                 <img
                   src={logo.url}
                   alt={logo.name}
-                  className="max-w-[60px] sm:max-w-[90px] max-h-[40px] sm:max-h-[60px] object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                  className="max-w-[90px] sm:max-w-[110px] max-h-[60px] sm:max-h-[70px] object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
                   draggable={false}
                 />
               </div>
