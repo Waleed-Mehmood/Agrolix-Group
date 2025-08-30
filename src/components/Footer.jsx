@@ -11,9 +11,9 @@ export default function Footer() {
     { name: 'ABOUT US', href: '/about' },
     { name: 'OUR CONTRIBUTION', href: '/on-field-services' },
     { name: 'QUALITY CONTROL', href: '/quality-control' },
-    { name: 'PRODUCTS', href: '/products' },
-    { name: 'SEEDS', href: '/seeds' },
-    { name: 'CROPS', href: '/crops' },
+    { name: 'PRODUCTS', href: '#products' },
+    { name: 'SEEDS', href: '#seeds' },
+    { name: 'CROPS', href: '#crops' },
     { name: 'COMPANIES', href: '/companies' },
     { name: 'CAREER', href: '/career' },
     { name: 'CONTACT US', href: '/contact' }

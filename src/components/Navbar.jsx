@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   const navLinks = [
-  { name: 'HOME', href: '#home' },
+  { name: 'HOME', href: '/' },
   { name: 'ABOUT US', href: '/about' },
     { 
       name: 'OUR CONTRIBUTION', 
@@ -29,7 +29,7 @@ const Navbar = () => {
   { name: 'QUALITY CONTROL', href: '/quality-control' },
     { 
       name: 'PRODUCTS', 
-      href: '/products'
+      href: '#products'
     },
     { name: 'SEEDS', href: '#seeds' },
     { name: 'CROPS', href: '#crops' },
