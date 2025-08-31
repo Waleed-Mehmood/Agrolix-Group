@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 
 const faqs = [
   {
-    question: 'What does Suncrop Group do?',
-    answer: 'Suncrop Group specializes in agricultural products, providing high-quality seeds, fertilizers, and crop solutions.'
+    question: 'What does Agrolix Group do?',
+    answer: 'Agrolix Group specializes in agricultural products, providing high-quality seeds, fertilizers, and crop solutions.'
   },
   {
-    question: 'How can I contact Suncrop Group?',
-    answer: 'You can reach us via the Contact page on our website or email us at info@suncropgroup.com.'
+    question: 'How can I contact Agrolix Group?',
+    answer: 'You can reach us via the Contact page on our website or email us at info@agrolixgroup.com.'
   },
   {
     question: 'Where are your products available?',
@@ -27,36 +27,84 @@ const FAQ = () => {
   };
 
   return (
-  <div className="max-w-6xl mx-4 xl:mx-auto my-8 sm:my-10 px-3 sm:px-6 py-6 bg-gradient-to-br from-green-50 via-white to-emerald-50 rounded-2xl shadow-xl border border-green-200">
-      <div className="flex items-center justify-center mb-6 sm:mb-8">
-        <div className="bg-gradient-to-r from-green-600 via-green-700 to-emerald-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-xl shadow-lg flex items-center gap-2 sm:gap-3 w-full sm:w-auto justify-center">
-          <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="text-white"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16h6m-7 4h8a2 2 0 002-2V6a2 2 0 00-2-2H7a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
-          <h2 className="text-lg sm:text-2xl font-bold tracking-wide text-center">Frequently Asked Questions</h2>
-        </div>
-      </div>
-  <div className="space-y-3 sm:space-y-4">
-        {faqs.map((faq, idx) => (
-          <div key={idx} className="rounded-xl border border-green-200 bg-white shadow-sm overflow-hidden transition-all duration-300">
-            <button
-              className={`w-full px-3 sm:px-6 py-3 sm:py-4 text-left flex justify-between items-center font-semibold text-base sm:text-lg focus:outline-none transition-colors duration-300 ${openIndex === idx ? 'bg-green-50 text-green-700' : 'bg-white text-green-900 hover:bg-green-100'}`}
-              onClick={() => toggleFAQ(idx)}
-            >
-              <span className="flex items-center gap-1 sm:gap-2">
-                <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="text-green-600"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
-                {faq.question}
-              </span>
-              <span className={`ml-2 transition-transform duration-300 ${openIndex === idx ? 'rotate-180 text-emerald-600' : 'text-green-600'}`}>
-                <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
-              </span>
-            </button>
-            <div
-              className={`px-3 sm:px-6 pb-3 sm:pb-4 text-gray-700 text-sm sm:text-base transition-all duration-300 ${openIndex === idx ? 'block animate__animated animate__fadeIn' : 'hidden'}`}
-              style={{ background: 'linear-gradient(90deg, #e6fffa 0%, #f0fff4 100%)' }}
-            >
-              {faq.answer}
-            </div>
+    <div className="py-16 bg-gradient-to-b from-white to-green-50">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8 sm:mb-12">
+          <div className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium mb-3 sm:mb-4">
+            <span className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-green-500 rounded-full animate-pulse"></span>
+            Have Questions?
           </div>
-        ))}
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-800 mb-3 sm:mb-4">
+            Frequently Asked Questions
+          </h2>
+          <div className="w-16 sm:w-24 h-1 bg-green-600 mx-auto rounded-full"></div>
+        </div>
+        
+        <div className="grid gap-4 sm:gap-6 max-w-4xl mx-auto">
+          {faqs.map((faq, idx) => (
+            <div 
+              key={idx} 
+              className={`group bg-gradient-to-r from-white to-green-50/30 rounded-lg sm:rounded-2xl shadow-md sm:shadow-lg transition-all duration-300 
+                ${openIndex === idx 
+                  ? 'ring-2 ring-green-500 shadow-green-200/50' 
+                  : 'hover:shadow-xl hover:shadow-green-100/50 hover:scale-[1.01] sm:hover:scale-[1.02]'
+                } border border-green-100`}
+            >
+              <button
+                className={`w-full px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between gap-2 sm:gap-4 ${
+                  openIndex === idx ? 'bg-green-50/50' : ''
+                }`}
+                onClick={() => toggleFAQ(idx)}
+              >
+                <span className={`flex-1 text-left font-semibold ${
+                  openIndex === idx 
+                    ? 'text-green-700 text-base sm:text-lg' 
+                    : 'text-gray-700 group-hover:text-green-600'
+                } transition-all duration-300`}>
+                  <span className="mr-2 sm:mr-3 inline-block text-sm sm:text-base">
+                    {openIndex === idx ? '🌿' : '🔍'}
+                  </span>
+                  {faq.question}
+                </span>
+                <span 
+                  className={`flex-shrink-0 p-2 sm:p-3 rounded-full transition-all duration-300 ${
+                    openIndex === idx 
+                      ? 'bg-gradient-to-br from-green-500 to-emerald-600 text-white shadow-md sm:shadow-lg shadow-green-200/50 scale-105 sm:scale-110' 
+                      : 'bg-green-100 text-green-600 group-hover:bg-green-200'
+                  }`}
+                >
+                  <svg
+                    className={`w-4 h-4 sm:w-5 sm:h-5 transform transition-transform duration-300 ${
+                      openIndex === idx ? 'rotate-180' : ''
+                    }`}
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <div
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                  openIndex === idx ? 'max-h-96' : 'max-h-0'
+                }`}
+              >
+                <div className="px-4 sm:px-6 pb-4 sm:pb-5 pt-3 sm:pt-4 border-t border-green-100">
+                  <p className="text-gray-600 bg-white/50 p-3 sm:p-4 rounded-lg sm:rounded-xl leading-relaxed text-sm sm:text-base">
+                    <span className="text-green-700 font-medium hidden sm:inline">→</span> 
+                    <span className="text-green-700 font-medium sm:hidden">•</span> {faq.answer}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

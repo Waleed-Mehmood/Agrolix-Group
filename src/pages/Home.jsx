@@ -4,15 +4,25 @@ import AboutUs from "../components/AboutUs";
 import Footer from "../components/Footer";
 import LogoSlider from "../components/LogoSlider";
 import FAQ from "../components/FAQ";
+import LatestArticles from "../components/LatestArticles";
+import TestimonialsSection from "../components/TestimonialsSection";
+import FeatureSection from "../components/FeatureSection";
+import ContactSection from "../components/ContactSection";
+import CallToAction from "../components/CallToAction";
 
 export default function Home() {
   return (
     <div>
       <Navbar />
       <HeroSection />
-      <LogoSlider />
       <AboutUs />
+      <LogoSlider />
+      <FeatureSection/>
+      <TestimonialsSection/>
       <FAQ />
+      <LatestArticles />
+      <CallToAction />
+      <ContactSection />
       <Footer />
     </div>
   );

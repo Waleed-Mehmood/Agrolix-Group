@@ -16,9 +16,9 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 const careerContent = {
-  title: "Join Suncrop Group",
+  title: "Join Agrolix Group",
   intro:
-    "At Suncrop Group, we are committed to innovation, quality, and growth in the agriculture sector. We believe in empowering our team to make a difference in the world of crop science and agricultural solutions. If you are passionate about making an impact and want to be part of a dynamic, forward-thinking organization, explore our career opportunities below.",
+    "At Agrolix Group, we are committed to innovation, quality, and growth in the agriculture sector. We believe in empowering our team to make a difference in the world of crop science and agricultural solutions. If you are passionate about making an impact and want to be part of a dynamic, forward-thinking organization, explore our career opportunities below.",
   opportunities: [
     {
       title: "Research & Development",
@@ -105,7 +105,7 @@ export default function Career() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.5 }}
             >
-              Be part of a dynamic team driving innovation and growth in agriculture. Explore your career with Suncrop Group!
+              Be part of a dynamic team driving innovation and growth in agriculture. Explore your career with Agrolix Group!
             </motion.p>
           </motion.div>
         </div>
@@ -183,7 +183,7 @@ export default function Career() {
                     {op.description}
                   </motion.p>
                   <motion.a
-                    href={`mailto:careers@suncropgroup.com?subject=Job Application - ${encodeURIComponent(op.title)}`}
+                    href={`mailto:careers@agrolixgroup.com?subject=Job Application - ${encodeURIComponent(op.title)}`}
                     className="w-full bg-gradient-to-r from-green-600 to-emerald-600 text-white py-3 px-6 rounded-xl font-semibold hover:from-green-700 hover:to-emerald-700 transition-all duration-300 transform group-hover:scale-105 shadow-md hover:shadow-lg flex items-center justify-center"
                     style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
                     whileHover={{ scale: 1.08 }}
@@ -202,7 +202,7 @@ export default function Career() {
           <div className="max-w-6xl mx-auto px-4">
             <div className="text-center mb-12">
               <h3 className="text-4xl font-bold mb-4">
-                Why Choose Suncrop Group?
+                Why Choose Agrolix Group?
               </h3>
               <div className="w-24 h-1 bg-white mx-auto rounded-full opacity-70"></div>
             </div>
@@ -289,7 +289,7 @@ export default function Career() {
                     <div>
                       <p className="text-gray-300 text-sm">Email Us</p>
                       <p className="text-white font-semibold">
-                        careers@suncropgroup.com
+                        careers@agrolixgroup.com
                       </p>
                     </div>
                   </div>

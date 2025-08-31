@@ -13,9 +13,9 @@ export default function Footer() {
           {/* Logo & Description */}
           <div className="flex flex-col items-center md:items-start md:w-1/4 animate__animated animate__fadeInLeft">
             <Link to="/">
-              <img src={logo} alt="Suncrop Group Logo" className="h-20 w-20 mb-4 rounded-full shadow-2xl border-4 border-white" />
+              <img src={logo} alt="Agrolix Group Logo" className="h-20 w-20 mb-4 rounded-full shadow-2xl border-4 border-white" />
             </Link>
-            <p className="text-gray-200 text-base font-medium mb-6 text-center md:text-left">Suncrop Group is a leader in agricultural innovation, empowering farmers with quality products and expert support for a brighter future.</p>
+            <p className="text-gray-200 text-base font-medium mb-6 text-center md:text-left">Agrolix Group is a leader in agricultural innovation, empowering farmers with quality products and expert support for a brighter future.</p>
             <div className="flex space-x-4 mb-2">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:scale-110 hover:text-blue-400 transition-transform duration-200">
                 <FaFacebookF className="h-7 w-7" />
@@ -66,16 +66,16 @@ export default function Footer() {
           <div className="md:w-1/4 flex flex-col items-center md:items-start animate__animated animate__fadeInRight">
             <h3 className="font-bold text-lg mb-4 text-green-300">Contact Us</h3>
             <ul className="space-y-2 text-base">
-              <li>Email: <a href="mailto:info@suncropgroup.com" className="hover:text-green-400 transition-colors">info@suncropgroup.com</a></li>
+              <li>Email: <a href="mailto:info@agrolixgroup.com" className="hover:text-green-400 transition-colors">info@agrolixgroup.com</a></li>
               <li>Phone: <a href="tel:+923001234567" className="hover:text-green-400 transition-colors">+92-300-1234567</a></li>
-              <li>Address: Suncrop Group, Lahore, Pakistan</li>
+              <li>Address: Agrolix Group, Lahore, Pakistan</li>
             </ul>
           </div>
         </div>
         {/* Copyright section at the very bottom */}
         <div className="w-full flex flex-col items-center justify-center mt-8">
-          <div className="text-sm text-gray-300 mb-2">&copy; 2025 Suncrop Group. All rights reserved.</div>
-          <div className="text-xs text-gray-400">Designed by Suncrop Group Web Team</div>
+          <div className="text-sm text-gray-300 mb-2">&copy; 2025 Agrolix Group. All rights reserved.</div>
+          <div className="text-xs text-gray-400">Designed by Agrolix Group Web Team</div>
         </div>
       </div>
     </footer>

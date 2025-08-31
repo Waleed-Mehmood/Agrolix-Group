@@ -45,7 +45,7 @@ const Navbar = () => {
           {/* Logo Section */}
           <div className="flex items-center space-x-3">
             <Link to="/">
-              <img src={suncropLogo} alt="Suncrop Logo" className="w-16 h-16 sm:w-20 sm:h-20 object-contain" />
+              <img src={suncropLogo} alt="Agrolix Logo" className="w-16 h-16 sm:w-20 sm:h-20 object-contain" />
             </Link>
           </div>
 

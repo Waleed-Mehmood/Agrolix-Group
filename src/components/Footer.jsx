@@ -25,10 +25,10 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { name: 'Facebook', icon: FaFacebookF, href: 'https://facebook.com/suncropgroup', color: 'hover:text-blue-500' },
-    { name: 'Instagram', icon: FaInstagram, href: 'https://instagram.com/suncropgroup', color: 'hover:text-pink-500' },
-    { name: 'TikTok', icon: FaTiktok, href: 'https://tiktok.com/@suncropgroup', color: 'hover:text-gray-300' },
-    { name: 'LinkedIn', icon: FaLinkedinIn, href: 'https://linkedin.com/company/suncropgroup', color: 'hover:text-blue-400' }
+    { name: 'Facebook', icon: FaFacebookF, href: 'https://facebook.com/agrolixgroup', color: 'hover:text-blue-500' },
+    { name: 'Instagram', icon: FaInstagram, href: 'https://instagram.com/agrolixgroup', color: 'hover:text-pink-500' },
+    { name: 'TikTok', icon: FaTiktok, href: 'https://tiktok.com/@agrolixgroup', color: 'hover:text-gray-300' },
+    { name: 'LinkedIn', icon: FaLinkedinIn, href: 'https://linkedin.com/company/agrolixgroup', color: 'hover:text-blue-400' }
   ];
 
   return (
@@ -54,14 +54,14 @@ export default function Footer() {
                 <div className="relative">
                   <img 
                     src={logo} 
-                    alt="Suncrop Group Logo" 
+                    alt="Agrolix Group Logo" 
                     className="h-16 w-16 rounded-full shadow-2xl border-3 border-green-300 group-hover:scale-110 transition-transform duration-300" 
                   />
                   <div className="absolute -top-1 -right-1 w-4 h-4 bg-green-400 rounded-full animate-pulse"></div>
                 </div>
                 <div>
                   <h2 className="text-2xl font-bold bg-gradient-to-r from-green-300 to-blue-300 bg-clip-text text-transparent">
-                    Suncrop Group
+                    Agrolix Group
                   </h2>
                   <div className="flex items-center space-x-1 text-green-300 text-base">
                     <FaLeaf className="w-3 h-3" />
@@ -147,13 +147,13 @@ export default function Footer() {
             </h3>
             <div className="space-y-3">
               <a 
-                href="mailto:info@suncropgroup.com"
+                href="mailto:info@agrolixgroup.com"
                 className="flex items-center space-x-3 text-gray-300 hover:text-yellow-400 transition-colors duration-200 group text-base"
               >
                 <div className="w-8 h-8 bg-yellow-400 bg-opacity-20 rounded-lg flex items-center justify-center group-hover:bg-opacity-30 transition-all">
                   <FaEnvelope className="w-4 h-4 text-yellow-400" />
                 </div>
-                <span>info@suncropgroup.com</span>
+                <span>info@agrolixgroup.com</span>
               </a>
               
               <a 
@@ -171,7 +171,7 @@ export default function Footer() {
                   <FaMapMarkerAlt className="w-4 h-4 text-blue-400" />
                 </div>
                 <div>
-                  <p>Suncrop Group Headquarters</p>
+                  <p>Agrolix Group Headquarters</p>
                   <p className="text-gray-400">Lahore, Punjab, Pakistan</p>
                 </div>
               </div>
@@ -187,12 +187,12 @@ export default function Footer() {
         {/* Bottom section */}
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-base text-gray-400">
-            <span>&copy; {currentYear} Suncrop Group. All rights reserved.</span>
+            <span>&copy; {currentYear} Agrolix Group. All rights reserved.</span>
           </div>
           
           <div className="text-xs text-gray-500 flex items-center space-x-2">
             <FaLeaf className="w-3 h-3 text-green-400" />
-            <span>Designed with 🌱 by Suncrop Group Web Team</span>
+            <span>Designed with 🌱 by Agrolix Group Web Team</span>
           </div>
         </div>
 

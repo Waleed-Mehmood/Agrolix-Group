@@ -3,7 +3,7 @@ export const articles = [
   {
     id: 1,
     title: "Sustainable Agriculture Practices",
-    summary: "Learn how Suncrop Group is leading the way in sustainable farming.",
+    summary: "Learn how Agrolix Group is leading the way in sustainable farming.",
     image: "https://via.placeholder.com/150",
     date: "2025-08-01"
   },

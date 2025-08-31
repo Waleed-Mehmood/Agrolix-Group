@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import WhatsAppButton from "./components/WhatsAppButton";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
+import ArticleDetail from "./pages/ArticleDetail";
 import ResearchAndDevelopment from "./pages/ResearchAndDevelopment";
 import Companies from "./pages/Companies";
 import About from "./pages/About";
@@ -37,12 +38,13 @@ export default function App() {
             <Route path="/companies" element={<Companies />} />
             <Route path="/research-and-development" element={<ResearchAndDevelopment />} />
             <Route path="/on-field-services" element={<OnFieldServices />} />
+            <Route path="/articles/:id" element={<ArticleDetail />} />
           </Routes>
         </main>
         {/* WhatsApp Floating Action Button */}
       <WhatsAppButton 
         phoneNumber="+923338674754"
-        message="Hello! I want to know more about Suncrop Group."
+        message="Hello! I want to know more about Agrolix Group."
         position="bottom-right"
       />
       </div>
