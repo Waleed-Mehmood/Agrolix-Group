@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import { FaStar, FaQuoteLeft, FaChevronLeft, FaChevronRight, FaMapMarkerAlt, FaArrowRight, FaWhatsapp } from 'react-icons/fa';
 import 'slick-carousel/slick/slick.css';
@@ -109,12 +109,23 @@ const TestimonialsSection = () => {
     );
   };
 
+  // Window size state for forcing re-render
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   // Slick slider settings
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: windowWidth < 1024 ? 1 : 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
@@ -187,7 +198,7 @@ const TestimonialsSection = () => {
         {/* Testimonials Slider */}
         <div className="relative max-w-7xl mx-auto">
           <div className="px-0 sm:px-4 md:px-8 lg:px-12">
-            <Slider {...settings}>
+            <Slider {...settings} key={windowWidth}>
               {testimonials.map((testimonial) => (
                 <div key={testimonial.id} className="flex flex-col h-full">
                   <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-green-200 group h-full flex flex-col justify-between min-h-[340px] sm:min-h-[360px] md:min-h-[380px]">
