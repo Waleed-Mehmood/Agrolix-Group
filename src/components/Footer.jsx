@@ -25,7 +25,7 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { name: 'Facebook', icon: FaFacebookF, href: 'https://facebook.com/agrolixgroup', color: 'hover:text-blue-500' },
+    { name: 'Facebook', icon: FaFacebookF, href: 'https://www.facebook.com/share/1H3Jaz5d2s/?mibextid=wwXIfr', color: 'hover:text-blue-500' },
     { name: 'Instagram', icon: FaInstagram, href: 'https://instagram.com/agrolixgroup', color: 'hover:text-pink-500' },
     { name: 'TikTok', icon: FaTiktok, href: 'https://tiktok.com/@agrolixgroup', color: 'hover:text-gray-300' },
     { name: 'LinkedIn', icon: FaLinkedinIn, href: 'https://linkedin.com/company/agrolixgroup', color: 'hover:text-blue-400' }
@@ -157,13 +157,23 @@ export default function Footer() {
               </a>
               
               <a 
-                href="tel:+923001234567"
+                href="tel:0622887723"
                 className="flex items-center space-x-3 text-gray-300 hover:text-green-400 transition-colors duration-200 group text-base"
               >
                 <div className="w-8 h-8 bg-green-400 bg-opacity-20 rounded-lg flex items-center justify-center group-hover:bg-opacity-30 transition-all">
                   <FaPhone className="w-4 h-4 text-green-400" />
                 </div>
-                <span>+92-300-1234567</span>
+                <span>062-2887723-24</span>
+              </a>
+              
+              <a 
+                href="tel:03018656824"
+                className="flex items-center space-x-3 text-gray-300 hover:text-green-400 transition-colors duration-200 group text-base"
+              >
+                <div className="w-8 h-8 bg-green-400 bg-opacity-20 rounded-lg flex items-center justify-center group-hover:bg-opacity-30 transition-all">
+                  <FaPhone className="w-4 h-4 text-green-400" />
+                </div>
+                <span>0301-8656824</span>
               </a>
               
               <div className="flex items-start space-x-3 text-gray-300 text-base">
@@ -172,7 +182,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <p>Agrolix Group Headquarters</p>
-                  <p className="text-gray-400">Lahore, Punjab, Pakistan</p>
+                  <p className="text-gray-400">35 A Small Industrial Estate Bahawalpur</p>
                 </div>
               </div>
             </div>

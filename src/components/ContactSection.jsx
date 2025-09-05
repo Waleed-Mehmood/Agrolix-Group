@@ -61,7 +61,7 @@ const ContactSection = () => {
                       </div>
                       <div>
                         <p className="text-xs sm:text-sm text-green-100">Our Location</p>
-                        <p className="font-medium text-sm sm:text-base">123 Agriculture Street, Farmland</p>
+                          <p className="font-medium text-sm sm:text-base">35 A Small Industrial Estate Bahawalpur</p>
                       </div>
                     </div>
 
@@ -73,28 +73,29 @@ const ContactSection = () => {
                       </div>
                       <div>
                         <p className="text-xs sm:text-sm text-green-100">Email Us</p>
-                        <p className="font-medium text-sm sm:text-base break-all">contact@agrolixgroup.com</p>
+                          <p className="font-medium text-sm sm:text-base break-all">info@agrolixgroup.com</p>
                       </div>
                     </div>
 
-                    <div className="flex items-center space-x-3 sm:space-x-4">
-                      <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-green-500 rounded-lg flex items-center justify-center">
-                        <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                        </svg>
+                      <div className="flex items-center space-x-3 sm:space-x-4">
+                        <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-green-500 rounded-lg flex items-center justify-center">
+                          <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                          </svg>
+                        </div>
+                        <div>
+                          <p className="text-xs sm:text-sm text-green-100">Call Us</p>
+                          <p className="font-medium text-sm sm:text-base">062-2887723-24</p>
+                          <p className="font-medium text-sm sm:text-base">0301-8656824</p>
+                        </div>
                       </div>
-                      <div>
-                        <p className="text-xs sm:text-sm text-green-100">Call Us</p>
-                        <p className="font-medium text-sm sm:text-base">+1 (234) 567-8900</p>
-                      </div>
-                    </div>
                   </div>
 
                   <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-green-500">
                     <h4 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Business Hours</h4>
                     <div className="space-y-1 sm:space-y-2 text-green-100 text-sm sm:text-base">
-                      <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                      <p>Saturday: 10:00 AM - 4:00 PM</p>
+                      <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                      <p>Saturday: 9:00 AM - 2:00 PM</p>
                       <p>Sunday: Closed</p>
                     </div>
                   </div>

@@ -2,11 +2,11 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import slide1 from "../assets/homepage/slides/slide1.jpg";
-import slide2 from "../assets/homepage/slides/slide2.jpg";
-import slide3 from "../assets/homepage/slides/slide3.jpg";
-import slide4 from "../assets/homepage/slides/slide4.jpg";
-import slide5 from "../assets/homepage/slides/slide5.jpg";
+import slide1 from "../assets/homepage/banners/banner1.jpg";
+import slide2 from "../assets/homepage/banners/banner2.jpg";
+import slide3 from "../assets/homepage/banners/banner3.jpg";
+import slide4 from "../assets/homepage/banners/banner4.jpg";
+import slide5 from "../assets/homepage/banners/banner5.jpg";
 
 const slides = [
   {

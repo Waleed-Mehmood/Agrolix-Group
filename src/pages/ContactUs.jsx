@@ -62,14 +62,14 @@ export default function ContactUs() {
   const contactInfo = [
     {
       icon: FaMapMarkerAlt,
-      title: "Head Office",
-      content: "Bahawalpur, Punjab, Pakistan",
-      detail: "State-of-the-art office and production facilities",
+    title: "Head Office",
+    content: "35 A Small Industrial Estate Bahawalpur",
+    detail: "State-of-the-art office and production facilities",
     },
     {
       icon: FaPhone,
       title: "Phone Numbers",
-      content: "+92-xxx-xxxxxxx",
+    content: "062-2887723-24, 0301-8656824",
       detail: "Available during business hours",
     },
     {
@@ -81,7 +81,7 @@ export default function ContactUs() {
     {
       icon: FaClock,
       title: "Business Hours",
-      content: "Mon - Fri: 8:00 AM - 6:00 PM",
+      content: "Mon - Fri: 9:00 AM - 5:00 PM",
       detail: "Saturday: 9:00 AM - 2:00 PM",
     },
   ];
@@ -420,8 +420,8 @@ export default function ContactUs() {
       {/* Google Map Section - moved to bottom */}
       <div className="w-full rounded-2xl overflow-hidden shadow-lg border border-gray-100">
         <iframe
-          title="Bahawalpur Office Location"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3537.073073964812!2d71.6848930753707!3d29.39534737523409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3939e8e2e2e2e2e2%3A0x123456789abcdef!2sBahawalpur%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1690000000000!5m2!1sen!2s"
+          title="35 A Small Industrial Estate Bahawalpur Location"
+          src="https://www.google.com/maps?q=35%20A%20Small%20Industrial%20Estate%20Bahawalpur&output=embed"
           width="100%"
           height="350"
           style={{ border: 0 }}
