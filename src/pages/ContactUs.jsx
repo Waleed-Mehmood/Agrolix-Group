@@ -13,6 +13,11 @@ import {
   FaIndustry,
 } from "react-icons/fa";
 import Navbar from "../components/Navbar";
+import agrolixLogo from "../assets/homepage/logo-images/agrolix-chem-ind.png";
+import passionAgroLogo from "../assets/homepage/logo-images/passion-agro-pak.png";
+import passionSeedsLogo from "../assets/homepage/logo-images/agro-passion-seeds.png";
+import arzPakLogo from "../assets/homepage/logo-images/arz-pak.png";
+import { Link } from "react-router-dom";
 import contactusImg from "../assets/contact-us/contactus.webp";
 import Footer from "../components/Footer";
 
@@ -91,21 +96,25 @@ export default function ContactUs() {
       icon: FaIndustry,
       name: "Agrolix Chemical Industry",
       description: "Manufacturing and production of agrochemicals",
+      logo: agrolixLogo,
     },
     {
       icon: FaLeaf,
       name: "Passion Agro Pakistan",
       description: "Agricultural solutions and crop protection",
+      logo: passionAgroLogo,
     },
     {
       icon: FaBuilding,
       name: "Passion Agro Seeds",
       description: "High-quality seeds for better yields",
+      logo: passionSeedsLogo,
     },
     {
       icon: FaUsers,
       name: "Arz e Pak Network",
       description: "Franchise and dealer network across Pakistan",
+      logo: arzPakLogo,
     },
   ];
 
@@ -337,8 +346,12 @@ export default function ContactUs() {
                         key={index}
                         className="flex items-start gap-4 p-4 rounded-xl hover:bg-gray-50 transition-colors duration-300 group"
                       >
-                        <div className="bg-gradient-to-br from-green-500 to-blue-500 w-12 h-12 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                          <IconComponent className="w-6 h-6 text-white" />
+                        <div className="relative w-12 h-12 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                          <img
+                            src={subsidiary.logo}
+                            alt={subsidiary.name + ' logo'}
+                            className="w-12 h-12 object-contain rounded-lg border border-gray-200 bg-white shadow"
+                          />
                         </div>
                         <div>
                           <h4 className="font-semibold text-gray-800 mb-1">
@@ -361,19 +374,20 @@ export default function ContactUs() {
                 </h3>
                 <div className="grid grid-cols-2 gap-2 sm:gap-3">
                   {[
-                    "Insecticides",
-                    "Weedicides",
-                    "Fungicides",
-                    "Micronutrients",
-                    "Granules",
-                    "Seeds",
+                    { name: "Fungicides", path: "/products/fungicides" },
+                    { name: "Herbicides", path: "/products/herbicides" },
+                    { name: "Insecticides", path: "/products/insecticides" },
+                    { name: "Granules", path: "/products/granules" },
+                    { name: "Micro Nutrients", path: "/products/micro-nutrients" },
+                    { name: "Fertilizers", path: "/products/fertilizers" },
                   ].map((product, index) => (
-                    <div
+                    <Link
+                      to={product.path}
                       key={index}
-                      className="bg-gradient-to-r from-green-500 to-blue-500 text-white px-4 py-2 rounded-lg text-sm font-semibold text-center hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+                      className="bg-gradient-to-r from-green-500 to-blue-500 text-white px-4 py-2 rounded-lg text-sm font-semibold text-center hover:shadow-lg transform hover:scale-105 transition-all duration-300 block"
                     >
-                      {product}
-                    </div>
+                      {product.name}
+                    </Link>
                   ))}
                 </div>
               </div>

@@ -29,10 +29,18 @@ const Navbar = () => {
   { name: 'QUALITY CONTROL', href: '/quality-control' },
     { 
       name: 'PRODUCTS', 
-      href: '#products'
+      href: '#products',
+      dropdown: [
+  { name: 'Fungicides', href: '/products/fungicides' },
+  { name: 'Herbicides', href: '/products/herbicides' },
+  { name: 'Insecticides', href: '/products/insecticides' },
+  { name: 'Granules', href: '/products/granules' },
+  { name: 'Micro Nutrients', href: '/products/micro-nutrients' },
+  { name: 'Fertilizers', href: '/products/fertilizers' }
+      ]
     },
-    { name: 'SEEDS', href: '#seeds' },
-    { name: 'CROPS', href: '#crops' },
+  { name: 'SEEDS', href: '#seeds' },
+  { name: 'CROPS', href: '/crops' },
   { name: 'COMPANIES', href: '/companies' },
   { name: 'CAREER', href: '/career' },
   { name: 'CONTACT US', href: '/contact' }

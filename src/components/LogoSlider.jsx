@@ -3,16 +3,14 @@ import React, { useState, useEffect, useRef } from 'react';
 const LogoSlider = () => {
   // Local logo images
   const logos = [
-    { id: 1, name: 'Ali Akbar', url: require('../assets/homepage/logo-images/ali-akbar.png') },
-    { id: 2, name: 'Bakhtawar', url: require('../assets/homepage/logo-images/bakhtawar.png') },
-    { id: 3, name: 'Greenlet', url: require('../assets/homepage/logo-images/greenlet.png') },
-    { id: 4, name: 'Hisun', url: require('../assets/homepage/logo-images/hisun.png') },
-    { id: 5, name: 'Kundan Naseem Hospital', url: require('../assets/homepage/logo-images/kundan-naseem-hospital.png') },
-    { id: 6, name: 'Nova', url: require('../assets/homepage/logo-images/nova.png') },
-    { id: 7, name: 'Agrolix Wanda', url: require('../assets/homepage/logo-images/suncrop-wanda.png') },
-    { id: 8, name: 'Sungro', url: require('../assets/homepage/logo-images/sungro.png') },
-    { id: 9, name: 'Tahafuz Sungro', url: require('../assets/homepage/logo-images/tahafuz-sungro.png') },
-    { id: 10, name: 'Tahafuz', url: require('../assets/homepage/logo-images/tahafuz.png') },
+    { id: 1, name: 'Agrolix Chem Ind', url: require('../assets/homepage/logo-images/agrolix-chem-ind.png') },
+    { id: 2, name: 'Agro Passion Seeds', url: require('../assets/homepage/logo-images/agro-passion-seeds.png') },
+    { id: 3, name: 'Arz Pak', url: require('../assets/homepage/logo-images/arz-pak.png') },
+    { id: 4, name: 'Passion Agro Pak', url: require('../assets/homepage/logo-images/passion-agro-pak.png') },
+    { id: 5, name: 'Agrolix Chem Ind', url: require('../assets/homepage/logo-images/agrolix-chem-ind.png') },
+    { id: 6, name: 'Agro Passion Seeds', url: require('../assets/homepage/logo-images/agro-passion-seeds.png') },
+    { id: 7, name: 'Arz Pak', url: require('../assets/homepage/logo-images/arz-pak.png') },
+    { id: 8, name: 'Passion Agro Pak', url: require('../assets/homepage/logo-images/passion-agro-pak.png') },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

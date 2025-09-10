@@ -288,18 +288,21 @@ export default function Career() {
                     <FaEnvelope className="w-6 h-6 text-green-400 mr-3" />
                     <div>
                       <p className="text-gray-300 text-sm">Email Us</p>
-                      <p className="text-white font-semibold">
-                        careers@agrolixgroup.com
-                      </p>
+                      <a href="mailto:info@agrolixgroup.com" className="text-white font-semibold hover:underline">
+                        info@agrolixgroup.com
+                      </a>
                     </div>
                   </div>
                   <div className="flex items-center justify-center md:justify-start">
                     <FaPhone className="w-6 h-6 text-green-400 mr-3" />
                     <div>
                       <p className="text-gray-300 text-sm">Call Us</p>
-                      <p className="text-white font-semibold">
-                        +92 (0) 51-XXXXXXX
-                      </p>
+                      <a href="tel:0622887723" className="text-white font-semibold hover:underline block">
+                        062-2887723-24
+                      </a>
+                      <a href="tel:03018656824" className="text-white font-semibold hover:underline block">
+                        03018656824
+                      </a>
                     </div>
                   </div>
                 </motion.div>
@@ -322,12 +325,13 @@ export default function Career() {
                   <p className="text-gray-300 mb-4">
                     Send your CV and cover letter
                   </p>
-                  <motion.button
-                    className="bg-gradient-to-r from-green-600 to-emerald-600 text-white px-8 py-3 rounded-full font-semibold hover:from-green-700 hover:to-emerald-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
-                    whileHover={{ scale: 1.08 }}
+                  <a
+                    href="mailto:info@agrolixgroup.com?subject=Job Application&body=Please attach your CV and cover letter."
+                    className="bg-gradient-to-r from-green-600 to-emerald-600 text-white px-8 py-3 rounded-full font-semibold hover:from-green-700 hover:to-emerald-700 transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center"
+                    style={{ textDecoration: 'none' }}
                   >
                     Submit Application
-                  </motion.button>
+                  </a>
                 </motion.div>
               </div>
             </motion.div>

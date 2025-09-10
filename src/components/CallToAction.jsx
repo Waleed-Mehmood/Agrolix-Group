@@ -14,7 +14,7 @@ const CallToAction = () => {
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             <Link
-              to="/products"
+              to="/products/fungicides"
               className="w-full sm:w-auto bg-white text-green-700 hover:bg-green-50 px-6 sm:px-8 py-3 rounded-lg font-semibold transition duration-300 text-sm sm:text-base"
             >
               Explore Products

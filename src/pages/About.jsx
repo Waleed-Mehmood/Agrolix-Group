@@ -1,4 +1,8 @@
 import React, { useRef } from "react";
+import agrolixLogo from "../assets/homepage/logo-images/agrolix-chem-ind.png";
+import aliAkbarLogo from "../assets/homepage/logo-images/ali-akbar.png";
+import passionSeedsLogo from "../assets/homepage/logo-images/agro-passion-seeds.png";
+import arzPakLogo from "../assets/homepage/logo-images/arz-pak.png";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import "animate.css";
 import ceoImg from "../assets/about-us/Ceo.jpg";
@@ -52,10 +56,22 @@ const AboutUs = () => {
   ];
 
   const companies = [
-    "Agrolix Chemical Industry",
-    "Passion Agro Pakistan",
-    "Passion Agro Seeds",
-    "Arz e Pak (Network of Franchises)",
+    {
+      name: "Agrolix Chemical Industry",
+      logo: agrolixLogo,
+    },
+    {
+      name: "Passion Agro Pakistan",
+      logo: aliAkbarLogo, 
+    },
+    {
+      name: "Passion Agro Seeds",
+      logo: passionSeedsLogo,
+    },
+    {
+      name: "Arz e Pak (Network of Franchises)",
+      logo: arzPakLogo,
+    },
   ];
 
   const products = [
@@ -192,11 +208,15 @@ const AboutUs = () => {
                   }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  <div className="bg-green-200 p-3 md:p-4 rounded-full mb-3 md:mb-4 group-hover:bg-green-400 transition-colors duration-300">
-                    <FaCheckCircle className="w-7 md:w-8 h-7 md:h-8 text-green-700 group-hover:text-white transition-colors duration-300" />
+                  <div className="mb-3 md:mb-4 flex justify-center items-center">
+                    <img
+                      src={company.logo}
+                      alt={company.name + " logo"}
+                      className="w-16 h-16 object-contain rounded-full bg-white border border-green-200 shadow group-hover:bg-green-100 transition-colors duration-300"
+                    />
                   </div>
                   <span className="text-green-900 font-semibold text-base md:text-lg text-center group-hover:text-green-800 transition-colors duration-300">
-                    {company}
+                    {company.name}
                   </span>
                 </motion.div>
               ))}

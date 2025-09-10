@@ -13,6 +13,10 @@ import {
   FaBolt,
   FaGlobe
 } from 'react-icons/fa';
+import agrolixLogo from '../assets/homepage/logo-images/agrolix-chem-ind.png';
+import passionAgroPakLogo from '../assets/homepage/logo-images/passion-agro-pak.png';
+import passionSeedsLogo from '../assets/homepage/logo-images/agro-passion-seeds.png';
+import arzPakLogo from '../assets/homepage/logo-images/arz-pak.png';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -31,6 +35,7 @@ const Companies = () => {
         "Strong farmer & dealer relationships"
       ],
       icon: <FaShieldAlt className="w-12 h-12 text-green-600" />,
+      logo: agrolixLogo,
       bgColor: "bg-gradient-to-br from-green-50 to-emerald-100",
       accentColor: "text-green-600"
     },
@@ -47,6 +52,7 @@ const Companies = () => {
         "Performance-driven products"
       ],
       icon: <FaBolt className="w-12 h-12 text-blue-600" />,
+      logo: passionAgroPakLogo,
       bgColor: "bg-gradient-to-br from-blue-50 to-cyan-100",
       accentColor: "text-blue-600"
     },
@@ -63,6 +69,7 @@ const Companies = () => {
         "Tailored to Pakistan's diverse conditions"
       ],
       icon: <FaSeedling className="w-12 h-12 text-amber-600" />,
+      logo: passionSeedsLogo,
       bgColor: "bg-gradient-to-br from-amber-50 to-yellow-100",
       accentColor: "text-amber-600"
     },
@@ -79,6 +86,7 @@ const Companies = () => {
         "Supporting local farmers internationally"
       ],
       icon: <FaGlobe className="w-12 h-12 text-purple-600" />,
+      logo: arzPakLogo,
       bgColor: "bg-gradient-to-br from-purple-50 to-indigo-100",
       accentColor: "text-purple-600"
     }
@@ -165,17 +173,17 @@ const Companies = () => {
                 >
                   <div className="p-4 sm:p-8 md:p-12">
                     <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6 sm:gap-8">
-                      {/* Company Icon & Header */}
+                      {/* Company Logo, Icon & Header */}
                       <motion.div
-                        className="flex-shrink-0 mb-4 lg:mb-0"
+                        className="flex-shrink-0 mb-4 lg:mb-0 flex flex-col items-center"
                         variants={iconVariants}
                         initial="rest"
                         whileHover="hover"
                         whileTap="hover"
                         style={{ display: 'inline-block' }}
                       >
-                        <div className="bg-white rounded-2xl p-4 sm:p-6 shadow-lg flex items-center justify-center">
-                          {company.icon}
+                        <div className="bg-white rounded-2xl p-4 sm:p-6 shadow-lg flex flex-col items-center justify-center">
+                          <img src={company.logo} alt={company.name + ' logo'} className="w-16 h-16 sm:w-20 sm:h-20 object-contain mb-2" />
                         </div>
                       </motion.div>
 

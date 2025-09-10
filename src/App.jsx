@@ -7,7 +7,12 @@ import ResearchAndDevelopment from "./pages/ResearchAndDevelopment";
 import Companies from "./pages/Companies";
 import About from "./pages/About";
 import Management from "./pages/Management";
-import Products from "./pages/Products";
+import Fungicides from "./pages/Fungicides";
+import Insecticides from "./pages/Insecticides";
+import Granules from "./pages/Granules";
+import Herbicides from "./pages/Herbicides";
+import MicroNutrients from "./pages/MicroNutrients";
+import Fertilizers from "./pages/Fertilizers";
 import ProductCategory from "./pages/ProductCategory";
 import Crops from "./pages/Crops";
 import Seed from "./pages/Seed";
@@ -27,7 +32,12 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/management" element={<Management />} />
-            <Route path="/products" element={<Products />} />
+            <Route path="/products/fungicides" element={<Fungicides />} />
+              <Route path="/products/insecticides" element={<Insecticides />} />
+              <Route path="/products/granules" element={<Granules />} />
+              <Route path="/products/herbicides" element={<Herbicides />} />
+              <Route path="/products/micro-nutrients" element={<MicroNutrients />} />
+              <Route path="/products/fertilizers" element={<Fertilizers />} />
             <Route path="/product-category" element={<ProductCategory />} />
             <Route path="/crops" element={<Crops />} />
             <Route path="/seed" element={<Seed />} />

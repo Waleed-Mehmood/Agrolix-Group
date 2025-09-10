@@ -1,5 +1,5 @@
 import { FaCheckCircle, FaAward, FaShieldAlt, FaMicroscope } from 'react-icons/fa';
-import qualityControlImg from '../assets/qualitycontrol/qualitycontrol2.webp';
+import qualityControlImg from '../assets/qualitycontrol/lab.jpg';
 import bannerImg from '../assets/qualitycontrol/qualitycontrol1.webp';
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
