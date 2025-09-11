@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import LovoImg from "../assets/products/insecticides/Lovo-Super.png";
-import SupplyImg from "../assets/products/insecticides/Supply.png";
-import QuickActionImg from "../assets/products/insecticides/Qucik-Action.png";
+import LovoImg from "../assets/products/granules/Lovo.jpg";
+import ApronImg from "../assets/products/granules/Apron.jpg";
+import JaberPlusImg from "../assets/products/granules/jaber-plus.jpeg";
 import {
   FaTint,
   FaLeaf,
@@ -29,7 +29,7 @@ const Granules = () => {
       color: "from-green-500 to-green-600",
       bgcolor: "from-green-500 to-green-600",
       icon: <FaBug className="w-12 h-12" />,
-      image: LovoImg,
+  image: LovoImg,
     },
     {
       id: 2,
@@ -41,7 +41,7 @@ const Granules = () => {
       color: "from-green-500 to-green-600",
       bgcolor: "from-yellow-500 to-yellow-600",
       icon: <FaBug className="w-12 h-12" />,
-      image: SupplyImg, // Use a relevant image if available
+  image: ApronImg,
     },
     {
       id: 3,
@@ -53,7 +53,7 @@ const Granules = () => {
       color: "from-green-500 to-green-600",
       bgcolor: "from-blue-500 to-blue-600",
       icon: <FaBug className="w-12 h-12" />,
-      image: QuickActionImg, // Use a relevant image if available
+  image: JaberPlusImg,
     },
   ];
 

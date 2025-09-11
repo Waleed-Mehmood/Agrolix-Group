@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import DoubleStarImg from "../assets/products/herbicides/Double-star.jpg";
-import GengweiImg from "../assets/products/herbicides/Gengwei.png";
-import SleepOffImg from "../assets/products/herbicides/Sleep-Off.png";
-import GlyphotopImg from "../assets/products/herbicides/Glyphotop.png";
-import HDFImg from "../assets/products/herbicides/HDF.png";
+import GengweiImg from "../assets/products/herbicides/Gengwei.jpeg";
+import SleepOffImg from "../assets/products/herbicides/Sleep-Off.jpeg";
+import GlyphotopImg from "../assets/products/herbicides/Glyphotop.jpeg";
+import HDFImg from "../assets/products/herbicides/HDF.jpeg";
 import BaofuGengweiImg from "../assets/products/herbicides/Baofu-Gengwei.jpg";
-import EliminatorImg from "../assets/products/herbicides/Eliminator.png";
+import EliminatorImg from "../assets/products/herbicides/Eliminator.jpeg";
 import DeftImg from "../assets/products/herbicides/Deft.png";
-import CompusPlusImg from "../assets/products/herbicides/Compus-Plus.png";
-import BermudaImg from "../assets/products/herbicides/Bermuda.png";
+import CompusPlusImg from "../assets/products/herbicides/Compus-Plus.jpeg";
+import BermudaImg from "../assets/products/herbicides/Bermuda.jpeg";
 import {
   FaTint,
   FaLeaf,

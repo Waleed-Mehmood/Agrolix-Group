@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 import agrolixLogo from "../assets/homepage/logo-images/agrolix-chem-ind.png";
-import aliAkbarLogo from "../assets/homepage/logo-images/ali-akbar.png";
+import passionagropakLogo from "../assets/homepage/logo-images/passion-agro-pak.png";
 import passionSeedsLogo from "../assets/homepage/logo-images/agro-passion-seeds.png";
 import arzPakLogo from "../assets/homepage/logo-images/arz-pak.png";
 import { motion, useMotionValue, useSpring } from "framer-motion";
@@ -62,7 +63,7 @@ const AboutUs = () => {
     },
     {
       name: "Passion Agro Pakistan",
-      logo: aliAkbarLogo, 
+      logo: passionagropakLogo, 
     },
     {
       name: "Passion Agro Seeds",
@@ -75,11 +76,12 @@ const AboutUs = () => {
   ];
 
   const products = [
-    "Insecticides",
-    "Weedicides",
     "Fungicides",
-    "Micronutrients",
+    "Herbicides",
+    "Insecticides",
     "Granules",
+    "Micro Nutrients",
+    "Fertilizers",
   ];
 
   const facilities = ["EC", "SC", "WP", "WS", "WDG"];
@@ -235,16 +237,27 @@ const AboutUs = () => {
                   Product Portfolio
                 </h3>
                 <div className="grid grid-cols-2 gap-3 md:gap-4">
-                  {products.map((product, index) => (
-                    <div
-                      key={index}
-                      className="bg-green-50 p-2 md:p-4 rounded-lg text-center"
-                    >
-                      <span className="font-medium text-green-800 text-sm md:text-base">
-                        {product}
-                      </span>
-                    </div>
-                  ))}
+                  {products.map((product, index) => {
+                    const getPath = (product) => {
+                      const productLower = product.toLowerCase();
+                      if (productLower === "micro nutrients") {
+                        return "/products/micro-nutrients";
+                      }
+                      return `/products/${productLower}`;
+                    };
+                    
+                    return (
+                      <Link
+                        key={index}
+                        to={getPath(product)}
+                        className="bg-green-50 p-2 md:p-4 rounded-lg text-center hover:bg-green-100 transition-colors duration-300"
+                      >
+                        <span className="font-medium text-green-800 text-sm md:text-base">
+                          {product}
+                        </span>
+                      </Link>
+                    );
+                  })}
                 </div>
               </div>
 

@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import GoldPlusImg from "../assets/products/micronutrients/Gold-Plus.png";
-import PowerPlusImg from "../assets/products/micronutrients/Power-Plus.png";
-import GreenLandImg from "../assets/products/micronutrients/greenland.png";
+import GoldPlusImg from "../assets/products/micronutrients/Gold-Plus.jpeg";
+import PowerPlusImg from "../assets/products/micronutrients/Power-Plus.jpeg";
+import GreenLandImg from "../assets/products/micronutrients/greenland.jpeg";
 import SuccessPlusImg from "../assets/products/micronutrients/Success-Plus.png";
-import PhosoplusImg from "../assets/products/micronutrients/Phosoplus.png";
-import GrothwHelperImg from "../assets/products/micronutrients/Grothw-Helper.png";
-import KansolImg from "../assets/products/micronutrients/KANSOL.png";
-import BorolixImg from "../assets/products/micronutrients/Borolix.png";
+import PhosoplusImg from "../assets/products/micronutrients/Phosoplus.jpeg";
+import GrothwHelperImg from "../assets/products/micronutrients/Grothw-Helper.jpeg";
+import KansolImg from "../assets/products/micronutrients/KANSOL.jpeg";
+import BorolixImg from "../assets/products/micronutrients/Borolix.jpeg";
 import SaferImg from "../assets/products/micronutrients/Safer.png";
-import FlasherImg from "../assets/products/micronutrients/Flasher.png";
-import NPKImg from "../assets/products/micronutrients/NPK.png";
+import FlasherImg from "../assets/products/micronutrients/Flasher.jpeg";
+import NPKImg from "../assets/products/micronutrients/NPK.jpeg";
 import {
   FaTint,
   FaLeaf,

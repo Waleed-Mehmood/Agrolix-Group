@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaTiktok, FaLinkedinIn, FaArrowRight, FaEnvelope, FaPhone, FaMapMarkerAlt, FaLeaf } from 'react-icons/fa';
-import logo from '../assets/suncrop-logo.png';
+import logo from '../assets/homepage/logo-images/agrolix-chem-ind.png';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
@@ -55,7 +55,7 @@ export default function Footer() {
                   <img 
                     src={logo} 
                     alt="Agrolix Group Logo" 
-                    className="h-16 w-16 rounded-full shadow-2xl border-3 border-green-300 group-hover:scale-110 transition-transform duration-300" 
+                    className="h-16 w-20 shadow-2xl border-3 border-green-300 group-hover:scale-110 transition-transform duration-300" 
                   />
                   <div className="absolute -top-1 -right-1 w-4 h-4 bg-green-400 rounded-full animate-pulse"></div>
                 </div>

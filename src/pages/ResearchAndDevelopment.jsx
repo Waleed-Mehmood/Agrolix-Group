@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { FaMicroscope } from 'react-icons/fa';
 import bannerImg from '../assets/research/agriculture-research1.jpg';
-import researchImg from '../assets/research/agriculture-research2.png';
+import researchImg from '../assets/research/agriculture-research2.jpeg';
 
 const ResearchAndDevelopment = () => {
   return (

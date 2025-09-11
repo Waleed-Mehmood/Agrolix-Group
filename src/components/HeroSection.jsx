@@ -87,10 +87,10 @@ const HeroSection = () => {
   };
 
   return (
-  <div className="relative w-full h-[35vh] md:h-[80vh] overflow-hidden">
+  <div className="relative w-[100vw] sm:w-full h-[35vh] sm:h-[80vh] overflow-hidden">
       <Slider {...settings}>
         {slides.map((slide, idx) => (
-          <div key={idx} className="relative w-full h-[35vh] md:h-[80vh]">
+          <div key={idx} className="relative w-[100vw] sm:w-full h-[25vh] sm:h-[80vh]">
             <img
               src={slide.bg}
               alt={slide.heading}

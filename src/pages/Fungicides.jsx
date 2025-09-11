@@ -1,13 +1,13 @@
 import React from "react";
 import DiZebImg from "../assets/products/fungicides/Di-Zeb.png";
-import RexcelImg from "../assets/products/fungicides/Rexcel.png";
+import RexcelImg from "../assets/products/fungicides/Rexcel.jpeg";
 import PivotImg from "../assets/products/fungicides/Pivot.png";
-import AzonilImg from "../assets/products/fungicides/Azonil.png";
-import CymancoImg from "../assets/products/fungicides/Cymanco.png";
+import AzonilImg from "../assets/products/fungicides/Azonil.jpeg";
+import CymancoImg from "../assets/products/fungicides/Cymanco.jpeg";
 import LateeVoImg from "../assets/products/fungicides/Latee-vo.jpg";
-import StartegyImg from "../assets/products/fungicides/Startegy.png";
-import ConverterImg from "../assets/products/fungicides/Converter.png";
-import SulmefonImg from "../assets/products/fungicides/Sulmefon.png";
+import StartegyImg from "../assets/products/fungicides/Startegy.jpeg";
+import ConverterImg from "../assets/products/fungicides/Converter.jpeg";
+import SulmefonImg from "../assets/products/fungicides/Sulmefon.jpeg";
 import {
   FaTint,
   FaLeaf,

@@ -15,7 +15,7 @@ import MicroNutrients from "./pages/MicroNutrients";
 import Fertilizers from "./pages/Fertilizers";
 import ProductCategory from "./pages/ProductCategory";
 import Crops from "./pages/Crops";
-import Seed from "./pages/Seed";
+import Seeds from "./pages/Seeds";
 import QualityControl from "./pages/QualityControl";
 import Career from "./pages/Career";
 import News from "./pages/News";
@@ -40,7 +40,7 @@ export default function App() {
               <Route path="/products/fertilizers" element={<Fertilizers />} />
             <Route path="/product-category" element={<ProductCategory />} />
             <Route path="/crops" element={<Crops />} />
-            <Route path="/seed" element={<Seed />} />
+            <Route path="/seeds" element={<Seeds />} />
             <Route path="/quality-control" element={<QualityControl />} />
             <Route path="/career" element={<Career />} />
             <Route path="/news" element={<News />} />
@@ -53,7 +53,7 @@ export default function App() {
         </main>
         {/* WhatsApp Floating Action Button */}
       <WhatsAppButton 
-        phoneNumber="+923338674754"
+        phoneNumber="+923018656824"
         message="Hello! I want to know more about Agrolix Group."
         position="bottom-right"
       />

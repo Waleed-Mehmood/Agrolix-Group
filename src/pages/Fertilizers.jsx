@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import GoldPlusImg from "../assets/products/micronutrients/Gold-Plus.png";
-import GrothwHelperImg from "../assets/products/micronutrients/Grothw-Helper.png";
+import FullTossImg from "../assets/products/fertilizers/Full-Toss.png";
+import GrowthHelperImg from "../assets/products/fertilizers/Growth-helper.png";
 import {
   FaTint,
   FaLeaf,
@@ -28,7 +28,7 @@ const Fertilizers = () => {
       color: "from-green-500 to-green-600",
       bgcolor: "from-yellow-200 to-yellow-400",
       icon: <FaLeaf className="w-12 h-12" />,
-      image: GoldPlusImg, // You can replace with a specific image if available
+      image: FullTossImg,
     },
     {
       id: 2,
@@ -40,7 +40,7 @@ const Fertilizers = () => {
       color: "from-green-500 to-green-600",
       bgcolor: "from-pink-200 to-pink-400",
       icon: <FaAtom className="w-12 h-12" />,
-      image: GrothwHelperImg, // You can replace with a specific image if available
+      image: GrowthHelperImg,
     },
   ];
 

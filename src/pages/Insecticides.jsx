@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import LovoImg from "../assets/products/insecticides/Lovo-Super.png";
-import FemitalImg from "../assets/products/insecticides/Femital.png";
-import SuperCidienImg from "../assets/products/insecticides/Super-Cidien.png";
+import LovoImg from "../assets/products/insecticides/Lovo-Super.jpeg";
+import FemitalImg from "../assets/products/insecticides/Femital.jpeg";
+import SuperCidienImg from "../assets/products/insecticides/Super-Cidien.jpeg";
 import FeuitoImg from "../assets/products/insecticides/Feuito.jpg";
 import FortunerPlusImg from "../assets/products/insecticides/Fortuner-Plus.png";
-import KargilImg from "../assets/products/insecticides/Kargil.png";
+import KargilImg from "../assets/products/insecticides/Kargil.jpeg";
 import JinBuhanImg from "../assets/products/insecticides/Jin-buhan.jpg";
-import TwoWayImg from "../assets/products/insecticides/Two-Way.png";
-import CeedoImg from "../assets/products/insecticides/Ceedo.png";
-import SupplyImg from "../assets/products/insecticides/Supply.png";
-import SambooImg from "../assets/products/insecticides/Samboo.png";
-import QuickActionImg from "../assets/products/insecticides/Qucik-Action.png";
+import TwoWayImg from "../assets/products/insecticides/Two-Way.jpeg";
+import CeedoImg from "../assets/products/insecticides/Ceedo.jpeg";
+import SupplyImg from "../assets/products/insecticides/Supply.jpeg";
+import SambooImg from "../assets/products/insecticides/Samboo.jpeg";
+import QuickActionImg from "../assets/products/insecticides/Qucik-Action.jpeg";
 import {
   FaTint,
   FaLeaf,

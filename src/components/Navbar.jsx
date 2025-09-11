@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { HiMenu, HiX, HiChevronDown } from 'react-icons/hi';
-import suncropLogo from '../assets/suncrop-logo.png';
+import agrolixLogo from '../assets/homepage/logo-images/agrolix-chem-ind.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,7 +39,7 @@ const Navbar = () => {
   { name: 'Fertilizers', href: '/products/fertilizers' }
       ]
     },
-  { name: 'SEEDS', href: '#seeds' },
+  { name: 'SEEDS', href: '/seeds' },
   { name: 'CROPS', href: '/crops' },
   { name: 'COMPANIES', href: '/companies' },
   { name: 'CAREER', href: '/career' },
@@ -47,13 +47,13 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-gradient-to-r from-green-600 via-green-700 to-emerald-600 shadow-lg z-50 py-4">
+    <nav className="bg-gradient-to-r from-green-500 via-green-700 to-emerald-600 shadow-lg z-50 py-4">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo Section */}
           <div className="flex items-center space-x-3">
             <Link to="/">
-              <img src={suncropLogo} alt="Agrolix Logo" className="w-16 h-16 sm:w-20 sm:h-20 object-contain" />
+              <img src={agrolixLogo} alt="Agrolix Logo" className="w-32 h-24 sm:w-36 sm:h-32 object-contain" />
             </Link>
           </div>
 

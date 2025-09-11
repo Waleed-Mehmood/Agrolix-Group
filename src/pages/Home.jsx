@@ -9,6 +9,7 @@ import TestimonialsSection from "../components/TestimonialsSection";
 import FeatureSection from "../components/FeatureSection";
 import ContactSection from "../components/ContactSection";
 import CallToAction from "../components/CallToAction";
+import ProductCategories from "../components/ProductCategories";
 
 export default function Home() {
   return (
@@ -17,8 +18,9 @@ export default function Home() {
       <HeroSection />
       <AboutUs />
       <LogoSlider />
-      <FeatureSection/>
-      <TestimonialsSection/>
+      <ProductCategories />
+      <FeatureSection />
+      <TestimonialsSection />
       <FAQ />
       <LatestArticles />
       <CallToAction />

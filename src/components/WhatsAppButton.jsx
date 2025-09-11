@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const WhatsAppButton = ({ 
-  phoneNumber = "+923338674754", 
+  phoneNumber = "+923018656824", 
   message = "Hi! I'm interested in your services.",
   position = "bottom-right" 
 }) => {
