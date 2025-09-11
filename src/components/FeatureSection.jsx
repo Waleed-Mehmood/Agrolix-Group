@@ -42,7 +42,7 @@ const FeatureSection = () => {
             <span className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-green-500 rounded-full animate-pulse"></span>
             Features & Benefits
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 text-gray-800">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 text-primary">
             Our Features
           </h2>
           <p className="text-gray-600 text-base sm:text-lg max-w-xl sm:max-w-2xl mx-auto px-4">

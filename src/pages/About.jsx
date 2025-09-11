@@ -7,6 +7,7 @@ import arzPakLogo from "../assets/homepage/logo-images/arz-pak.png";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import "animate.css";
 import ceoImg from "../assets/about-us/Ceo.jpg";
+import haseebImg from "../assets/about-us/haseeb-nasir.jpg";
 import aboutImg from "../assets/about-us/about2.webp";
 import {
   FaLeaf,
@@ -119,7 +120,7 @@ const AboutUs = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div>
-                <h2 className="text-4xl font-bold text-gray-800 mb-6">
+                <h2 className="text-4xl font-bold text-primary mb-6">
                   About Our Journey
                 </h2>
                 <p className="text-lg text-gray-600 leading-relaxed mb-6">
@@ -195,7 +196,7 @@ const AboutUs = () => {
         {/* Our Group Companies Section */}
         <section className="py-10 md:py-16 px-4 md:px-6 bg-gradient-to-br from-green-100 to-blue-50 animate__animated animate__zoomIn">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-green-800 mb-6 md:mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-6 md:mb-8">
               Our Group Companies
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
@@ -228,12 +229,12 @@ const AboutUs = () => {
         {/* Products & Facilities */}
         <section className="py-10 md:py-16 px-4 md:px-6 animate__animated animate__fadeInUp">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8 md:mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-8 md:mb-12">
               Our Capabilities
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               <div className="bg-white p-6 md:p-8 rounded-2xl shadow-lg">
-                <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-4 md:mb-6">
+                <h3 className="text-xl md:text-2xl font-bold text-primary mb-4 md:mb-6">
                   Product Portfolio
                 </h3>
                 <div className="grid grid-cols-2 gap-3 md:gap-4">
@@ -262,7 +263,7 @@ const AboutUs = () => {
               </div>
 
               <div className="bg-white p-6 md:p-8 rounded-2xl shadow-lg">
-                <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-4 md:mb-6">
+                <h3 className="text-xl md:text-2xl font-bold text-primary mb-4 md:mb-6">
                   Production Facilities
                 </h3>
                 <p className="text-gray-600 mb-2 md:mb-4">
@@ -286,7 +287,7 @@ const AboutUs = () => {
         {/* Core Values */}
         <section className="py-10 md:py-16 px-4 md:px-6 bg-gradient-to-r from-gray-50 to-gray-100 animate__animated animate__fadeIn">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-4">
               Our Core Values
             </h2>
             <p className="text-center text-gray-600 mb-8 md:mb-12 text-base md:text-lg">
@@ -352,14 +353,14 @@ const AboutUs = () => {
           <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
             {/* CEO Card */}
             <div className="bg-white rounded-3xl shadow-2xl p-6 md:p-8 flex flex-col items-center hover:shadow-green-300 transition-shadow duration-300 w-full">
-              <div className="w-28 md:w-32 h-28 md:h-32 mb-4 md:mb-6 rounded-full overflow-hidden border-4 border-green-400 shadow-lg">
+              <div className="w-28 md:w-32 h-28 md:h-32 mb-4 md:mb-6 rounded-full overflow-hidden border-4 border-primary shadow-lg">
                 <img
                   src={ceoImg}
                   alt="CEO Nasir Shakeel Kahlon"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h2 className="text-lg md:text-2xl font-bold text-green-700 mb-1 md:mb-2 tracking-wide">
+              <h2 className="text-lg md:text-2xl font-bold text-primary mb-1 md:mb-2 tracking-wide">
                 Message of CEO
               </h2>
               <h3 className="text-base md:text-lg font-semibold text-gray-700 mb-2 md:mb-4">
@@ -381,14 +382,14 @@ const AboutUs = () => {
             </div>
             {/* Managing Director Card */}
             <div className="bg-white rounded-3xl shadow-2xl p-6 md:p-8 flex flex-col items-center hover:shadow-green-300 transition-shadow duration-300 w-full">
-              <div className="w-28 md:w-32 h-28 md:h-32 mb-4 md:mb-6 rounded-full overflow-hidden border-4 border-green-400 shadow-lg">
+              <div className="w-28 md:w-32 h-28 md:h-32 mb-4 md:mb-6 rounded-full overflow-hidden border-4 border-primary shadow-lg">
                 <img
-                  src={ceoImg}
+                  src={haseebImg}
                   alt="Managing Director Haseeb Nasir Kahlon"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h2 className="text-lg md:text-2xl font-bold text-green-700 mb-1 md:mb-2 tracking-wide">
+              <h2 className="text-lg md:text-2xl font-bold text-primary mb-1 md:mb-2 tracking-wide">
                 Message of Managing Director
               </h2>
               <h3 className="text-base md:text-lg font-semibold text-gray-700 mb-2 md:mb-4">

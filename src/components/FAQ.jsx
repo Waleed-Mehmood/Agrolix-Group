@@ -34,7 +34,7 @@ const FAQ = () => {
             <span className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-green-500 rounded-full animate-pulse"></span>
             Have Questions?
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-800 mb-3 sm:mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-3 sm:mb-4">
             Frequently Asked Questions
           </h2>
           <div className="w-16 sm:w-24 h-1 bg-green-600 mx-auto rounded-full"></div>

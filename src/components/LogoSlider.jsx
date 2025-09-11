@@ -131,7 +131,7 @@ const LogoSlider = () => {
   return (
   <div className="w-full max-w-7xl mx-auto my-12 py-10 px-2 sm:px-6">
   <div className="text-center mb-10 px-2">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-green-700 via-green-600 to-green-500 bg-clip-text text-transparent mb-2 sm:mb-3">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r text-primary bg-clip-text text-transparent mb-2 sm:mb-3">
           Agrolix Group – Quality You Can Trust
         </h2>
         <p className="text-slate-600 text-base sm:text-lg md:text-xl lg:text-2xl leading-snug sm:leading-normal mt-1 sm:mt-2">Pakistan ki leading agro-chemical company, serving farmers nationwide</p>

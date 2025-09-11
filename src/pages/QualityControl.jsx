@@ -147,7 +147,7 @@ export default function QualityControl() {
                 transition={{ duration: 0.5, delay: 0.7 }}
               >
                 <button
-                  className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition duration-200 focus:outline-none focus:ring-2 focus:ring-green-400"
+                  className="bg-[#611b74] hover:bg-[#722786] text-white font-semibold py-2 px-6 rounded-lg shadow-md transition duration-200 focus:outline-none focus:ring-2 focus:ring-[#611b74]"
                   onClick={() => setShowModal(true)}
                 >
                   View Accreditation Certificate
@@ -299,7 +299,7 @@ export default function QualityControl() {
         >
           <div className="max-w-3xl sm:max-w-4xl md:max-w-5xl mx-auto px-4 sm:px-6">
             <motion.h2
-              className="text-2xl sm:text-3xl font-bold text-center text-green-700 mb-6 sm:mb-10"
+              className="text-2xl sm:text-3xl font-bold text-center text-primary mb-6 sm:mb-10"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}

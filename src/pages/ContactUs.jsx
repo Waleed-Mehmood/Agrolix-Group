@@ -134,7 +134,7 @@ export default function ContactUs() {
           {/* Overlay Layer for Banner */}
           <div className="absolute inset-0 bg-black bg-opacity-70"></div>
           <div className="text-center text-gray-800 max-w-lg sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto px-2 sm:px-4 md:px-6 relative z-10">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 tracking-tight bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 tracking-tight bg-gradient-to-r from-green-600 to-[#a73fc4] bg-clip-text text-transparent">
               Get In Touch With Us
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-white max-w-xl mx-auto leading-relaxed">
@@ -157,7 +157,7 @@ export default function ContactUs() {
                   className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-gray-100 group"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="bg-gradient-to-br from-green-500 to-blue-500 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <div className="bg-gradient-to-br from-green-500 to-[#a73fc4] w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     <IconComponent className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-800 mb-3">
@@ -293,7 +293,7 @@ export default function ContactUs() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-gradient-to-r from-green-600 to-blue-600 text-white py-3 sm:py-4 px-6 sm:px-8 rounded-xl font-semibold text-base sm:text-lg hover:from-green-700 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 sm:gap-3"
+                    className="w-full bg-gradient-to-r from-green-600 to-[#a73fc4] text-white py-3 sm:py-4 px-6 sm:px-8 rounded-xl font-semibold text-base sm:text-lg hover:from-green-700 hover:to-[#8f35a8] transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 sm:gap-3"
                   >
                     {isSubmitting ? (
                       <div className="w-6 h-6 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
@@ -311,7 +311,7 @@ export default function ContactUs() {
             {/* Sidebar */}
             <div className="space-y-6 sm:space-y-8">
               {/* Company Info */}
-              <div className="bg-gradient-to-br from-green-600 to-blue-600 rounded-3xl p-4 sm:p-8 text-white">
+              <div className="bg-gradient-to-br from-green-600 to-[#a73fc4] rounded-3xl p-4 sm:p-8 text-white">
                 <h3 className="text-2xl font-bold mb-6">Agrolix Group</h3>
                 <div className="space-y-4">
                   <p className="text-green-100">
@@ -384,7 +384,7 @@ export default function ContactUs() {
                     <Link
                       to={product.path}
                       key={index}
-                      className="bg-gradient-to-r from-green-500 to-blue-500 text-white px-4 py-2 rounded-lg text-sm font-semibold text-center hover:shadow-lg transform hover:scale-105 transition-all duration-300 block"
+                      className="bg-gradient-to-r from-green-500 to-[#a73fc4] text-white px-4 py-2 rounded-lg text-sm font-semibold text-center hover:shadow-lg transform hover:scale-105 transition-all duration-300 block"
                     >
                       {product.name}
                     </Link>
@@ -396,7 +396,7 @@ export default function ContactUs() {
 
           {/* Footer CTA */}
           <div className="mt-10 sm:mt-16 text-center">
-            <div className="bg-gradient-to-r from-green-600 to-blue-600 rounded-3xl p-6 sm:p-12 text-white">
+            <div className="bg-gradient-to-r from-green-600 to-[#a73fc4] rounded-3xl p-6 sm:p-12 text-white">
               <h2 className="text-2xl sm:text-3xl font-bold mb-2 sm:mb-4">
                 Ready to Partner With Us?
               </h2>

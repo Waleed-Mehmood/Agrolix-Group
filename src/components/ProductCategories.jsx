@@ -59,7 +59,7 @@ const ProductCategories = () => {
     <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-gray-50 to-gray-100">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-3 sm:mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-3 sm:mb-4">
             Our Products
           </h2>
           <div className="w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r from-green-400 to-green-600 mx-auto mb-4 sm:mb-6"></div>
@@ -96,7 +96,7 @@ const ProductCategories = () => {
                 
                 {/* Call to Action */}
                 <div className="flex justify-center">
-                  <span className="inline-flex items-center text-xs sm:text-sm font-semibold text-green-600 group-hover:text-green-700 transition-colors">
+                  <span className="inline-flex items-center text-xs sm:text-sm font-semibold text-green-600 group-hover:text-primary transition-colors">
                     Explore Products
                     <svg className="ml-1.5 sm:ml-2 w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

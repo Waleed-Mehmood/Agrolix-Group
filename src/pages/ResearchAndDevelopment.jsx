@@ -291,10 +291,10 @@ const ResearchAndDevelopment = () => {
                 solutions, contributing to food security and economic growth.
               </p>
               <motion.div
-                whileHover={{ scale: 1.07, backgroundColor: "#15803d" }}
+                whileHover={{ scale: 1.07, backgroundColor: "#611b74" }}
                 whileTap={{ scale: 0.97 }}
                 transition={{ type: "spring", stiffness: 300 }}
-                className="inline-flex items-center space-x-2 bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition-colors duration-300 shadow-lg cursor-pointer"
+                className="inline-flex items-center space-x-2 bg-[#611b74] text-white px-8 py-3 rounded-lg hover:bg-[#722786] transition-colors duration-300 shadow-lg cursor-pointer"
               >
                 <Link to="/about" className="flex items-center space-x-2 w-full h-full">
                   <span>About Our Research</span>

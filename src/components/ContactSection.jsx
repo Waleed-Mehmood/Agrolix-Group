@@ -33,7 +33,7 @@ const ContactSection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-10 sm:mb-12 md:mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-4">
               Let's Start a Conversation
             </h2>
             <div className="w-16 sm:w-20 md:w-24 h-1 bg-green-600 mx-auto mb-4 sm:mb-6"></div>
@@ -176,7 +176,7 @@ const ContactSection = () => {
                   <div>
                     <button
                       type="submit"
-                      className="w-full bg-green-600 text-white py-3 sm:py-4 px-4 sm:px-6 rounded-lg hover:bg-green-700 transition duration-300 transform hover:-translate-y-1 hover:shadow-lg font-medium text-base sm:text-lg"
+                      className="w-full bg-[#611b74] text-white py-3 sm:py-4 px-4 sm:px-6 rounded-lg hover:bg-[#8932a1] transition duration-300 transform hover:-translate-y-1 hover:shadow-lg font-medium text-base sm:text-lg"
                     >
                       Send Message
                     </button>

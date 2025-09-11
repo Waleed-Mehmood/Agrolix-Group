@@ -184,7 +184,7 @@ export default function Career() {
                   </motion.p>
                   <motion.a
                     href={`mailto:careers@agrolixgroup.com?subject=Job Application - ${encodeURIComponent(op.title)}`}
-                    className="w-full bg-gradient-to-r from-green-600 to-emerald-600 text-white py-3 px-6 rounded-xl font-semibold hover:from-green-700 hover:to-emerald-700 transition-all duration-300 transform group-hover:scale-105 shadow-md hover:shadow-lg flex items-center justify-center"
+                    className="w-full bg-gradient-to-r from-[#611b74] to-[#722786] text-white py-3 px-6 rounded-xl font-semibold hover:from-[#722786] hover:to-[#611b74] transition-all duration-300 transform group-hover:scale-105 shadow-md hover:shadow-lg flex items-center justify-center"
                     style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
                     whileHover={{ scale: 1.08 }}
                   >
@@ -327,7 +327,7 @@ export default function Career() {
                   </p>
                   <a
                     href="mailto:info@agrolixgroup.com?subject=Job Application&body=Please attach your CV and cover letter."
-                    className="bg-gradient-to-r from-green-600 to-emerald-600 text-white px-8 py-3 rounded-full font-semibold hover:from-green-700 hover:to-emerald-700 transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center"
+                    className="bg-gradient-to-r from-[#611b74] to-[#722786] text-white px-8 py-3 rounded-full font-semibold hover:from-[#722786] hover:to-[#611b74] transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center"
                     style={{ textDecoration: 'none' }}
                   >
                     Submit Application
