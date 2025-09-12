@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaTiktok, FaLinkedinIn, FaArrowRight, FaEnvelope, FaPhone, FaMapMarkerAlt, FaLeaf } from 'react-icons/fa';
-import logo from '../assets/homepage/logo-images/agrolix-chem-ind.png';
+import logo from '../assets/agrolix-logo.png';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
@@ -32,7 +32,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-gradient-to-br from-green-900 via-gray-900 to-green-800 text-white relative overflow-hidden">
+    <footer className="bg-gradient-to-br from-[#546b38] via-gray-900 to-[#445c28] text-white relative overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-10 left-10 w-32 h-32 bg-green-400 rounded-full blur-3xl"></div>
@@ -49,7 +49,7 @@ export default function Footer() {
           
           {/* Company Info */}
           <div className="lg:col-span-1 space-y-6">
-            <Link to="/" className="block">
+            {/* <Link to="/" className="block">
               <div className="flex items-center space-x-3 group cursor-pointer">
                 <div className="relative">
                   <img 
@@ -69,6 +69,19 @@ export default function Footer() {
                   </div>
                 </div>
               </div>
+            </Link> */}
+
+            <Link to="/" className="block">
+              <div className="flex items-center space-x-3 group cursor-pointer">
+                <div className="relative">
+                  <img 
+                    src={logo} 
+                    alt="Agrolix Group Logo" 
+                    className="h-28 w-full" 
+                  />
+                  <div className="absolute -top-1 -right-1 w-4 h-4 bg-[#e2ffbd] rounded-full animate-pulse"></div>
+                </div>
+              </div>
             </Link>
             
             <p className="text-gray-300 text-base leading-relaxed">
@@ -78,7 +91,7 @@ export default function Footer() {
             
             {/* Social Media */}
             <div>
-              <h4 className="text-green-300 font-semibold mb-3 text-base uppercase tracking-wide">Follow Us</h4>
+              <h4 className="text-[#a4c67a] font-semibold mb-3 text-base uppercase tracking-wide">Follow Us</h4>
               <div className="flex space-x-3">
                 {socialLinks.map((social) => {
                   const IconComponent = social.icon;
@@ -101,7 +114,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-green-300 font-bold text-lg mb-4 relative">
+            <h3 className="text-[#a4c67a] font-bold text-lg mb-4 relative">
               Quick Links
               <div className="absolute bottom-0 left-0 w-8 h-0.5 bg-gradient-to-r from-green-400 to-transparent"></div>
             </h3>
@@ -110,9 +123,9 @@ export default function Footer() {
                 <Link
                   key={link.name}
                   to={link.href}
-                  className="flex items-center space-x-2 text-gray-300 hover:text-green-400 hover:translate-x-1 transition-all duration-200 group text-base"
+                  className="flex items-center space-x-2 text-gray-300 hover:text-[#a4c67a] hover:translate-x-1 transition-all duration-200 group text-base"
                 >
-                  <FaArrowRight className="w-3 h-3 text-green-400 group-hover:text-green-300 transition-colors" />
+                  <FaArrowRight className="w-3 h-3 text-[#a4c67a] group-hover:text-[#b2d18c] transition-colors" />
                   <span>{link.name}</span>
                 </Link>
               ))}
@@ -121,7 +134,7 @@ export default function Footer() {
 
           {/* Products */}
           <div className="space-y-4">
-            <h3 className="text-green-300 font-bold text-lg mb-4 relative">
+            <h3 className="text-[#a4c67a] font-bold text-lg mb-4 relative">
               Our Contribution
               <div className="absolute bottom-0 left-0 w-8 h-0.5 bg-gradient-to-r from-green-400 to-transparent"></div>
             </h3>
@@ -130,9 +143,9 @@ export default function Footer() {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className="flex items-center space-x-2 text-gray-300 hover:text-green-400 hover:translate-x-1 transition-all duration-200 group text-base"
+                  className="flex items-center space-x-2 text-gray-300 hover:text-[#a4c67a] hover:translate-x-1 transition-all duration-200 group text-base"
                 >
-                  <FaArrowRight className="w-3 h-3 text-green-400 group-hover:text-green-300 transition-colors" />
+                  <FaArrowRight className="w-3 h-3 text-[#a4c67a] group-hover:text-[#b2d18c] transition-colors" />
                   <span>{item.name}</span>
                 </Link>
               ))}
@@ -141,7 +154,7 @@ export default function Footer() {
 
           {/* Contact Information */}
           <div className="space-y-4">
-            <h3 className="text-green-300 font-bold text-lg mb-4 relative">
+            <h3 className="text-[#a4c67a] font-bold text-lg mb-4 relative">
               Get In Touch
               <div className="absolute bottom-0 left-0 w-8 h-0.5 bg-gradient-to-r from-yellow-400 to-transparent"></div>
             </h3>

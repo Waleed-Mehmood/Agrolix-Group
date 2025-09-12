@@ -60,6 +60,15 @@ const HeroSection = () => {
                   height: 6px !important;
                 }
               }
+                @media (max-width: 380px) {
+                .slider-dots-list {
+                  gap: 0px !important;
+                }
+                .slider-dot-custom {
+                  width: 3px !important;
+                  height: 3px !important;
+                }
+              }
               .slider-dots-list li.slick-active .slider-dot-custom {
                 background: linear-gradient(135deg, #169b47 60%, #43e97b 100%) !important;
                 border-color: #169b47 !important;
@@ -87,14 +96,15 @@ const HeroSection = () => {
   };
 
   return (
-  <div className="relative w-[100vw] sm:w-full h-[35vh] sm:h-[80vh] overflow-hidden">
+    <div className="relative w-[100vw] sm:w-full h-[24vh] sm:h-[50vh] md:h-[60vh] lg:h-[80vh] overflow-hidden">
       <Slider {...settings}>
         {slides.map((slide, idx) => (
-          <div key={idx} className="relative w-[100vw] sm:w-full h-[25vh] sm:h-[80vh]">
+          <div key={idx} className="relative w-[100vw] sm:w-full h-[24vh] sm:h-[50vh] md:h-[60vh] lg:h-[80vh]">
             <img
               src={slide.bg}
               alt={slide.heading}
-              className="w-full h-full object-cover brightness-75"
+              className="w-[100vh] sm:w-full h-full object-cover brightness-75"
+              style={{ maxWidth: '100vw', width: '100vw', minWidth: '100vw', height: '100%', objectFit: 'cover' }}
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
               <h1 className="text-white text-3xl md:text-5xl font-bold mb-4 drop-shadow-lg">{slide.heading}</h1>

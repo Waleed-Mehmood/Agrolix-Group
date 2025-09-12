@@ -131,7 +131,7 @@ const LogoSlider = () => {
   return (
   <div className="w-full max-w-7xl mx-auto my-12 py-10 px-2 sm:px-6">
   <div className="text-center mb-10 px-2">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r text-primary bg-clip-text text-transparent mb-2 sm:mb-3">
+  <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r text-[#611b74] bg-clip-text mb-2 sm:mb-3">
           Agrolix Group – Quality You Can Trust
         </h2>
         <p className="text-slate-600 text-base sm:text-lg md:text-xl lg:text-2xl leading-snug sm:leading-normal mt-1 sm:mt-2">Pakistan ki leading agro-chemical company, serving farmers nationwide</p>
@@ -162,7 +162,7 @@ const LogoSlider = () => {
               }`}
               style={{ width: `${100 / itemsPerView}%` }}
             >
-              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-3 sm:p-4 shadow-md hover:shadow-xl transition-all duration-300 w-full h-24 sm:h-28 flex items-center justify-center group border border-green-200">
+              <div className="bg-[#f3f8ec] rounded-xl p-3 sm:p-4 shadow-md hover:shadow-xl transition-all duration-300 w-full h-24 sm:h-28 flex items-center justify-center group border" style={{ borderColor: '#a4c67a' }}>
                 <img
                   src={logo.url}
                   alt={logo.name}
@@ -180,8 +180,8 @@ const LogoSlider = () => {
           disabled={currentIndex === 0}
           className={`absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full shadow-lg transition-all duration-300 flex items-center justify-center ${
             currentIndex === 0
-              ? 'bg-green-100 text-green-300 cursor-not-allowed'
-              : 'bg-white hover:bg-gradient-to-r hover:from-green-500 hover:to-green-300 text-green-700 hover:text-white shadow-xl hover:scale-110'
+              ? 'bg-[#e6f2d7] text-[#d2e7b6] cursor-not-allowed'
+              : 'bg-white hover:bg-[#a4c67a] text-[#a4c67a] hover:text-white shadow-xl hover:scale-110'
           }`}
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -194,8 +194,8 @@ const LogoSlider = () => {
           disabled={currentIndex === maxIndex}
           className={`absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full shadow-lg transition-all duration-300 flex items-center justify-center ${
             currentIndex === maxIndex
-              ? 'bg-green-100 text-green-300 cursor-not-allowed'
-              : 'bg-white hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-green-700 hover:text-white shadow-xl hover:scale-110'
+              ? 'bg-[#e6f2d7] text-[#d2e7b6] cursor-not-allowed'
+              : 'bg-white hover:bg-[#a4c67a] text-[#a4c67a] hover:text-white shadow-xl hover:scale-110'
           }`}
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -212,8 +212,8 @@ const LogoSlider = () => {
             onClick={() => goToSlide(index)}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
               currentIndex === index
-                ? 'bg-gradient-to-r from-green-500 to-green-400 scale-125'
-                : 'bg-green-100 hover:bg-green-200'
+                ? 'bg-[#a4c67a] scale-125'
+                : 'bg-[#e6f2d7] hover:bg-[#cbe3a7]'
             }`}
           />
         ))}
@@ -223,7 +223,7 @@ const LogoSlider = () => {
   <div className="flex justify-center mt-6">
         <button
           onClick={() => setIsAutoPlaying(!isAutoPlaying)}
-          className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-green-500 to-green-400 text-white rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105"
+          className="flex items-center space-x-2 px-4 py-2" style={{ background: '#a4c67a', color: 'white', borderRadius: '9999px' }}
         >
           {isAutoPlaying ? (
             <>
@@ -245,10 +245,11 @@ const LogoSlider = () => {
 
       {/* Progress bar */}
       {isAutoPlaying && (
-        <div className="mt-6 w-full bg-green-100 rounded-full h-1 overflow-hidden">
+        <div className="mt-6 w-full rounded-full h-1 overflow-hidden" style={{ background: '#e6f2d7' }}>
           <div 
-            className="h-full bg-gradient-to-r from-green-500 to-green-300 rounded-full transition-all duration-300"
+            className="h-full rounded-full transition-all duration-300"
             style={{ 
+              background: '#a4c67a',
               animation: 'progress 3s linear infinite',
               animationPlayState: isDragging ? 'paused' : 'running'
             }}

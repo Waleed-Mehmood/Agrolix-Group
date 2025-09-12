@@ -20,12 +20,12 @@ const AboutUs = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 className="mr-2 sm:w-8 sm:h-3"
               >
-                <path d="M12 6H0" stroke="#3dd173" strokeWidth="2" />
-                <path d="M6 1L0 6L6 11" stroke="#3dd173" strokeWidth="2" />
+                <path d="M12 6H0" stroke="#611b74" strokeWidth="2" />
+                <path d="M6 1L0 6L6 11" stroke="#611b74" strokeWidth="2" />
               </svg>
               {/* Heading */}
               <h2
-                className="text-[#192937] font-bold text-xl sm:text-2xl md:text-3xl tracking-wide"
+                className="text-[#a4c67a] font-bold text-xl sm:text-2xl md:text-3xl tracking-wide"
                 style={{
                   fontFamily: "Orbitron, sans-serif",
                   letterSpacing: "0.05em",
@@ -36,7 +36,7 @@ const AboutUs = () => {
               {/* Right Line */}
               <div
                 className="flex-1 ml-2 h-0.5 rounded-full"
-                style={{ minWidth: "32px", background: "#3dd173" }}
+                style={{ minWidth: "32px", background: "#611b74" }}
               ></div>
             </div>
             <div className="space-y-4">
@@ -54,9 +54,9 @@ const AboutUs = () => {
                   to="/about"
                   className="inline-block px-6 py-1.5 rounded-lg border"
                   style={{
-                    background: "#96fdbc",
+                    background: "#611b74",
                     borderColor: "#1A2A49",
-                    color: "#1A2A49",
+                    color: "#fff",
                     fontWeight: "bold",
                     fontSize: "0.95rem",
                     boxShadow: "0 1px 2px 0 rgba(26,42,73,0.04)",

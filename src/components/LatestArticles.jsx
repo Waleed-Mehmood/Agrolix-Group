@@ -46,7 +46,7 @@ const LatestArticles = () => {
         {/* Section Header */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
-            <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+            <span className="w-2 h-2 bg-[#bddd97] rounded-full animate-pulse"></span>
             Latest Updates
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
@@ -89,7 +89,7 @@ const LatestArticles = () => {
                 
                 <Link
                   to={`/articles/${article.id}`}
-                  className="text-lg font-bold text-gray-800 mb-3 group-hover:text-green-600 transition-colors duration-300 line-clamp-2 leading-snug hover:underline"
+                  className="text-lg font-bold text-gray-800 mb-3 group-hover:text-[#a4c67a] transition-colors duration-300 line-clamp-2 leading-snug hover:underline"
                 >
                   {article.title}
                 </Link>
@@ -100,7 +100,7 @@ const LatestArticles = () => {
                 
                 <div className="flex items-center justify-between pt-4 border-t border-gray-100">
                   <div className="flex items-center gap-2">
-                    <div className="w-7 h-7 bg-green-500 rounded-full flex items-center justify-center text-white text-xs font-bold">
+                    <div className="w-7 h-7 bg-[#a4c67a] rounded-full flex items-center justify-center text-white text-xs font-bold">
                       {article.author.charAt(0)}
                     </div>
                     <div>
@@ -114,7 +114,7 @@ const LatestArticles = () => {
                   
                   <Link
                     to={`/articles/${article.id}`}
-                    className="text-green-600 hover:text-green-700 text-sm font-medium flex items-center gap-1 group/btn"
+                    className="text-[#a4c67a] hover:text-[#81a753] text-sm font-medium flex items-center gap-1 group/btn"
                   >
                     Read
                     <FaArrowRight size={12} className="group-hover/btn:translate-x-1 transition-transform duration-300" />

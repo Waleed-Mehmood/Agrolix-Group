@@ -203,7 +203,7 @@ const TestimonialsSection = () => {
                 <div key={testimonial.id} className="flex flex-col h-full">
                   <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-green-200 group h-full flex flex-col justify-between min-h-[340px] sm:min-h-[360px] md:min-h-[380px]">
                     {/* Quote Icon */}
-                    <div className="text-green-200 mb-3 sm:mb-4">
+                    <div className="text-[#bddd97] mb-3 sm:mb-4">
                       <FaQuoteLeft size={24} />
                     </div>
                     {/* Rating */}
@@ -228,7 +228,7 @@ const TestimonialsSection = () => {
                         <h4 className="font-bold text-gray-800 text-xs sm:text-sm">
                           {testimonial.name}
                         </h4>
-                        <p className="text-green-600 text-xs font-medium">
+                        <p className="text-[#a4c67a] text-xs font-medium">
                           {testimonial.profession}
                         </p>
                         <div className="flex items-center gap-1 text-gray-500 text-xs">
@@ -242,11 +242,11 @@ const TestimonialsSection = () => {
                       <div className="grid grid-cols-2 gap-1 sm:gap-2 text-xs">
                         <div>
                           <span className="text-gray-500">Crop:</span>
-                          <span className="font-medium text-green-700 ml-1">{testimonial.cropType}</span>
+                          <span className="font-medium text-[#a4c67a] ml-1">{testimonial.cropType}</span>
                         </div>
                         <div>
                           <span className="text-gray-500">Farm:</span>
-                          <span className="font-medium text-green-700 ml-1">{testimonial.acres}</span>
+                          <span className="font-medium text-[#a4c67a] ml-1">{testimonial.acres}</span>
                         </div>
                       </div>
                     </div>
