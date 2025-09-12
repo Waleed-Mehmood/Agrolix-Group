@@ -33,7 +33,7 @@ const Herbicides = () => {
       crop: "Rice",
       pest: "Broadleaf Weeds, Grasses, Sedge Weeds",
       dose: "100 g",
-      color: "from-green-500 to-green-600",
+      color: "from-[#a4c67a] to-[#a4c67a]",
       bgcolor: "from-green-500 to-green-600",
       icon: <FaBug className="w-12 h-12" />,
       image: DoubleStarImg,
@@ -45,7 +45,7 @@ const Herbicides = () => {
       crop: "Maize",
       pest: "Narrow & Broadleaf Weeds",
       dose: "1000 ML",
-      color: "from-green-500 to-green-600",
+      color: "from-[#a4c67a] to-[#a4c67a]",
       bgcolor: "from-yellow-500 to-yellow-600",
       icon: <FaBug className="w-12 h-12" />,
       image: GengweiImg,
@@ -57,7 +57,7 @@ const Herbicides = () => {
       crop: "Cotton",
       pest: "Narrow Leaf Weeds",
       dose: "500 ML",
-      color: "from-green-500 to-green-600",
+      color: "from-[#a4c67a] to-[#a4c67a]",
       bgcolor: "from-blue-500 to-blue-600",
       icon: <FaBug className="w-12 h-12" />,
       image: SleepOffImg,
@@ -69,7 +69,7 @@ const Herbicides = () => {
       crop: "All Crops",
       pest: "Broadleaf, Annual & Perennial Grasses",
       dose: "1500 ML",
-      color: "from-green-500 to-green-600",
+      color: "from-[#a4c67a] to-[#a4c67a]",
       bgcolor: "from-purple-500 to-purple-600",
       icon: <FaBug className="w-12 h-12" />,
       image: GlyphotopImg,
@@ -81,7 +81,7 @@ const Herbicides = () => {
       crop: "Cotton, Maize",
       pest: "Pre-emergence Weeds",
       dose: "800 ML",
-      color: "from-green-500 to-green-600",
+      color: "from-[#a4c67a] to-[#a4c67a]",
       bgcolor: "from-pink-500 to-pink-600",
       icon: <FaBug className="w-12 h-12" />,
       image: HDFImg,
@@ -93,7 +93,7 @@ const Herbicides = () => {
       crop: "Maize, Sugarcane",
       pest: "Bermuda Grass, Broadleaf & Narrow Leaf Weeds",
       dose: "35 ML + 1000 ML",
-      color: "from-green-500 to-green-600",
+      color: "from-[#a4c67a] to-[#a4c67a]",
       bgcolor: "from-red-500 to-red-600",
       icon: <FaBug className="w-12 h-12" />,
       image: BaofuGengweiImg,
@@ -105,7 +105,7 @@ const Herbicides = () => {
       crop: "Wheat",
       pest: "Broadleaf Weeds",
       dose: "400 ML",
-      color: "from-green-500 to-green-600",
+      color: "from-[#a4c67a] to-[#a4c67a]",
       bgcolor: "from-indigo-500 to-indigo-600",
       icon: <FaBug className="w-12 h-12" />,
       image: EliminatorImg,
@@ -117,7 +117,7 @@ const Herbicides = () => {
       crop: "Wheat",
       pest: "Broadleaf Weeds & Annual Grasses (Pre/Post-emergence)",
       dose: "40 g",
-      color: "from-green-500 to-green-600",
+      color: "from-[#a4c67a] to-[#a4c67a]",
       bgcolor: "from-teal-500 to-teal-600",
       icon: <FaBug className="w-12 h-12" />,
       image: DeftImg,
@@ -129,7 +129,7 @@ const Herbicides = () => {
       crop: "Wheat",
       pest: "Broadleaf Weeds",
       dose: "350 ML",
-      color: "from-green-500 to-green-600",
+      color: "from-[#a4c67a] to-[#a4c67a]",
       bgcolor: "from-orange-500 to-orange-600",
       icon: <FaBug className="w-12 h-12" />,
       image: CompusPlusImg,
@@ -141,7 +141,7 @@ const Herbicides = () => {
       crop: "Wheat",
       pest: "Post-emergence Grasses, Narrow & Broadleaf Weeds",
       dose: "360 ML",
-      color: "from-green-500 to-green-600",
+      color: "from-[#a4c67a] to-[#a4c67a]",
       bgcolor: "from-lime-500 to-lime-600",
       icon: <FaBug className="w-12 h-12" />,
       image: BermudaImg,
@@ -158,19 +158,19 @@ const Herbicides = () => {
             <div className="absolute -top-10 -left-10 w-40 h-40 bg-green-100 rounded-full opacity-30 blur-2xl z-0"></div>
             <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-green-200 rounded-full opacity-20 blur-2xl z-0"></div>
             <div className="relative flex flex-col sm:flex-row items-center justify-center mb-4 z-10 gap-2 sm:gap-4">
-              <div className="bg-gradient-to-br from-green-200 to-green-400 p-3 sm:p-4 rounded-full shadow-lg animate-spin-slow mb-2 sm:mb-0">
-                <FaLeaf className="w-8 h-8 sm:w-10 sm:h-10 text-green-700" />
+              <div className="bg-gradient-to-br from-[#dcfab8] to-[#a4c67a] p-3 sm:p-4 rounded-full shadow-lg animate-spin-slow mb-2 sm:mb-0">
+                <FaLeaf className="w-8 h-8 sm:w-10 sm:h-10 text-[#7a9955]" />
               </div>
-              <h1 className="text-3xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-700 via-green-500 to-green-700 drop-shadow-lg">
+              <h1 className="text-3xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#a4c67a] via-[#96be64] to-[#a4c67a] drop-shadow-lg">
                 Herbicides Collection
               </h1>
             </div>
             <div className="flex flex-col items-center z-10 relative">
-              <p className="text-lg sm:text-2xl text-green-700 font-semibold mb-2 tracking-wide">
+              <p className="text-lg sm:text-2xl text-[#a4c67a] font-semibold mb-2 tracking-wide">
                 Premium Plant Protection Solutions
               </p>
-              <span className="block w-20 sm:w-32 h-1 bg-gradient-to-r from-green-400 via-green-600 to-green-400 rounded-full mb-2"></span>
-              <span className="text-green-500 text-xs sm:text-sm italic">
+              <span className="block w-20 sm:w-32 h-1 bg-gradient-to-r from-[#a4c67a] via-[#6f8b4c] to-[#a4c67a] rounded-full mb-2"></span>
+              <span className="text-[#a4c67a] text-xs sm:text-sm italic">
                 Trusted by professionals & farmers
               </span>
             </div>
@@ -373,7 +373,7 @@ const Herbicides = () => {
           {/* Footer */}
           <div className="text-center mt-10 sm:mt-16">
             <div className="bg-white rounded-lg p-4 sm:p-8 shadow-md">
-              <FaAtom className="w-10 h-10 sm:w-12 sm:h-12 text-green-600 mx-auto mb-4" />
+              <FaAtom className="w-10 h-10 sm:w-12 sm:h-12 text-[#7a9955] mx-auto mb-4" />
               <p className="text-gray-600 text-base sm:text-lg font-medium">
                 Professional plant protection solutions for optimal crop health
               </p>

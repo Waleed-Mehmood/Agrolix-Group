@@ -45,7 +45,7 @@ const LatestArticles = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
+          <div className="inline-flex items-center gap-2 bg-[#e6ffc7] text-green-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
             <span className="w-2 h-2 bg-[#bddd97] rounded-full animate-pulse"></span>
             Latest Updates
           </div>

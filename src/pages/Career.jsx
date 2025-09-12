@@ -116,7 +116,7 @@ export default function Career() {
             <h2 className="text-4xl font-bold text-gray-800 mb-4">
               Career Opportunities
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-green-600 to-emerald-500 mx-auto rounded-full"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#a0c276] to-[#7a9955] mx-auto rounded-full"></div>
           </div>
 
           <motion.div
@@ -152,22 +152,22 @@ export default function Career() {
                 <div className="relative p-8">
                   <div className="flex items-start justify-between mb-4">
                     <motion.div
-                      className="p-3 bg-green-100 rounded-xl group-hover:bg-green-200 transition-colors duration-300"
+                      className="p-3 bg-gradient-to-r from-[#ebffd3] to-[#e8ffcd] rounded-xl group-hover:bg-green-200 transition-colors duration-300"
                       whileHover={{ rotate: 12 }}
                     >
-                      <div className="text-green-700">{op.icon}</div>
+                      <div className="text-[#7a9955]">{op.icon}</div>
                     </motion.div>
                     <motion.div
                       className="opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                       initial={{ x: 20, opacity: 0 }}
                       whileHover={{ x: 0, opacity: 1 }}
                     >
-                      <FaChevronRight className="w-6 h-6 text-green-600" />
+                      <FaChevronRight className="w-6 h-6 text-[#7a9955]" />
                     </motion.div>
                   </div>
 
                   <motion.h3
-                    className="text-2xl font-bold text-gray-800 mb-3 group-hover:text-green-700 transition-colors duration-300"
+                    className="text-2xl font-bold text-gray-800 mb-3 group-hover:text-[#7a9955] transition-colors duration-300"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
@@ -198,7 +198,7 @@ export default function Career() {
         </div>
 
         {/* Benefits Section */}
-        <div className="bg-gradient-to-r from-green-800 to-emerald-700 text-white py-16">
+        <div className="bg-[#7a9955] text-white py-16">
           <div className="max-w-6xl mx-auto px-4">
             <div className="text-center mb-12">
               <h3 className="text-4xl font-bold mb-4">
@@ -231,7 +231,7 @@ export default function Career() {
                 >
                   <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-6 hover:bg-opacity-20 transition-all duration-300 transform hover:scale-105">
                     <motion.div
-                      className="w-12 h-12 bg-green-400 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-300 transition-colors duration-300"
+                      className="w-12 h-12 bg-[#9fc473] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-[#bed89f] transition-colors duration-300"
                       initial={{ scale: 0.8 }}
                       animate={{ scale: 1 }}
                       transition={{ duration: 0.4, delay: 0.2 }}
@@ -285,7 +285,7 @@ export default function Career() {
                   transition={{ duration: 0.6, delay: 0.4 }}
                 >
                   <div className="flex items-center justify-center md:justify-start">
-                    <FaEnvelope className="w-6 h-6 text-green-400 mr-3" />
+                    <FaEnvelope className="w-6 h-6 text-[#7a9955] mr-3" />
                     <div>
                       <p className="text-gray-300 text-sm">Email Us</p>
                       <a href="mailto:info@agrolixgroup.com" className="text-white font-semibold hover:underline">
@@ -294,7 +294,7 @@ export default function Career() {
                     </div>
                   </div>
                   <div className="flex items-center justify-center md:justify-start">
-                    <FaPhone className="w-6 h-6 text-green-400 mr-3" />
+                    <FaPhone className="w-6 h-6 text-[#7a9955] mr-3" />
                     <div>
                       <p className="text-gray-300 text-sm">Call Us</p>
                       <a href="tel:0622887723" className="text-white font-semibold hover:underline block">
@@ -315,7 +315,7 @@ export default function Career() {
                   transition={{ duration: 0.6, delay: 0.4 }}
                 >
                   <motion.div
-                    className="bg-gradient-to-r from-green-600 to-emerald-600 rounded-full p-4 mb-4"
+                    className="bg-gradient-to-r from-[#7a9955] to-[#a0c276] rounded-full p-4 mb-4"
                     initial={{ scale: 0.8 }}
                     animate={{ scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.5 }}

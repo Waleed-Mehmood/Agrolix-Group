@@ -5,31 +5,31 @@ const features = [
     title: "High Quality Products",
     description: "We provide top-notch agricultural products to ensure the best yield for your crops.",
     icon: (
-      <svg className="w-12 h-12 text-green-600 transform transition-transform group-hover:scale-110 group-hover:rotate-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+      <svg className="w-12 h-12 text-[#611b74] transform transition-transform group-hover:scale-110 group-hover:rotate-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
     ),
-    bgColor: "from-green-50 to-green-100",
-    iconBg: "bg-green-100",
-    hoverBorder: "hover:border-green-400",
+    bgColor: "from-[#f6e4ff] to-[#f6e4ff]",
+    iconBg: "text-[#611b74]",
+    hoverBorder: "hover:border-[#9a4ab0]",
   },
   {
     title: "Expert Support",
     description: "Our team of experts is always available to guide you with the best farming practices.",
     icon: (
-      <svg className="w-12 h-12 text-blue-600 transform transition-transform group-hover:scale-110 group-hover:rotate-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" /></svg>
+      <svg className="w-12 h-12 text-[#611b74] transform transition-transform group-hover:scale-110 group-hover:rotate-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" /></svg>
     ),
-    bgColor: "from-blue-50 to-blue-100",
-    iconBg: "bg-blue-100",
-    hoverBorder: "hover:border-blue-400",
+    bgColor: "from-[#f6e4ff] to-[#f6e4ff]",
+    iconBg: "text-[#611b74]",
+    hoverBorder: "hover:border-[#9a4ab0]",
   },
   {
     title: "Innovative Solutions",
     description: "We use the latest technology to bring innovative solutions to the agricultural sector.",
     icon: (
-      <svg className="w-12 h-12 text-yellow-500 transform transition-transform group-hover:scale-110 group-hover:rotate-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6 1a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+      <svg className="w-12 h-12 text-[#611b74] transform transition-transform group-hover:scale-110 group-hover:rotate-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6 1a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
     ),
-    bgColor: "from-yellow-50 to-yellow-100",
-    iconBg: "bg-yellow-100",
-    hoverBorder: "hover:border-yellow-400",
+    bgColor: "from-[#f6e4ff] to-[#f6e4ff]",
+    iconBg: "text-[#611b74]",
+    hoverBorder: "hover:border-[#9a4ab0]",
   },
 ];
 
@@ -38,7 +38,7 @@ const FeatureSection = () => {
     <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium mb-3 sm:mb-4">
+          <div className="inline-flex items-center gap-2 bg-[#e6ffc7] text-green-800 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium mb-3 sm:mb-4">
             <span className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-[#a4c67a] rounded-full animate-pulse"></span>
             Features & Benefits
           </div>

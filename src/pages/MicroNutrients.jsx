@@ -34,7 +34,7 @@ const MicroNutrients = () => {
       crop: "All crops",
       pest: "Improves soil fertility & nutrient absorption; Boosts root development & microbial activity; Strengthens plant structure & stress tolerance; Enhances fruit size, quality & yield",
       dose: "As per recommendation",
-      color: "from-green-500 to-green-600",
+      color: "from-[#a4c67a] to-[#a4c67a]",
       bgcolor: "from-yellow-200 to-yellow-400",
       icon: <FaLeaf className="w-12 h-12" />,
   image: GoldPlusImg,
@@ -46,7 +46,7 @@ const MicroNutrients = () => {
       crop: "Sunflower, Canola, Mustard, All crops",
       pest: "Supports strong vegetative growth & greener crops; Improves nutrient absorption & protein formation; Increases oil content in sunflower, canola, mustard; Strengthens plants & boosts yield quality",
       dose: "As per recommendation",
-      color: "from-green-500 to-green-600",
+      color: "from-[#a4c67a] to-[#a4c67a]",
       bgcolor: "from-green-200 to-green-400",
       icon: <FaLeaf className="w-12 h-12" />,
   image: PowerPlusImg,
@@ -58,7 +58,7 @@ const MicroNutrients = () => {
       crop: "All crops",
       pest: "Prevents & corrects calcium deficiency; Strengthens stems & roots; Improves fruit quality & shelf life; Prevents blossom end rot, fruit cracking, tip burn",
       dose: "As per recommendation",
-      color: "from-green-500 to-green-600",
+      color: "from-[#a4c67a] to-[#a4c67a]",
       bgcolor: "from-lime-200 to-lime-400",
       icon: <FaLeaf className="w-12 h-12" />,
   image: GreenLandImg,
@@ -70,7 +70,7 @@ const MicroNutrients = () => {
       crop: "All crops",
       pest: "Zinc: root & stem growth; Iron: prevents leaf yellowing, supports chlorophyll; Copper: boosts plant immunity; Manganese: improves enzyme activity & metabolism",
       dose: "As per recommendation",
-      color: "from-green-500 to-green-600",
+      color: "from-[#a4c67a] to-[#a4c67a]",
       bgcolor: "from-blue-200 to-blue-400",
       icon: <FaAtom className="w-12 h-12" />,
   image: SuccessPlusImg,
@@ -82,7 +82,7 @@ const MicroNutrients = () => {
       crop: "All crops",
       pest: "Stronger root growth; Improves flowering, grain & fruit setting; Enhances nutrient uptake; Strengthens plants against stress",
       dose: "As per recommendation",
-      color: "from-green-500 to-green-600",
+      color: "from-[#a4c67a] to-[#a4c67a]",
       bgcolor: "from-purple-200 to-purple-400",
       icon: <FaAtom className="w-12 h-12" />,
   image: PhosoplusImg,
@@ -94,7 +94,7 @@ const MicroNutrients = () => {
       crop: "All crops",
       pest: "Potassium: fruit filling, grain development, crop quality; Sulphur: chlorophyll formation & protein synthesis; Improves plant resistance to diseases; Boosts yield & quality",
       dose: "As per recommendation",
-      color: "from-green-500 to-green-600",
+      color: "from-[#a4c67a] to-[#a4c67a]",
       bgcolor: "from-pink-200 to-pink-400",
       icon: <FaAtom className="w-12 h-12" />,
   image: GrothwHelperImg,
@@ -106,7 +106,7 @@ const MicroNutrients = () => {
       crop: "Cotton, Wheat, Rice, Vegetables, Fruits",
       pest: "Improves root development & nutrient uptake; Enhances resistance against stress; Stimulates physiological processes for better growth; Suitable for cotton, wheat, rice, vegetables, fruits",
       dose: "As per recommendation",
-      color: "from-green-500 to-green-600",
+      color: "from-[#a4c67a] to-[#a4c67a]",
       bgcolor: "from-red-200 to-red-400",
       icon: <FaAtom className="w-12 h-12" />,
   image: KansolImg,
@@ -118,7 +118,7 @@ const MicroNutrients = () => {
       crop: "Cereals, Vegetables, Fruits, Cash crops",
       pest: "Improves flowering, fruit setting & pollination; Prevents fruit cracking & yield loss; Quick absorption & translocation in plant; Suitable for cereals, vegetables, fruits, cash crops",
       dose: "As per recommendation",
-      color: "from-green-500 to-green-600",
+      color: "from-[#a4c67a] to-[#a4c67a]",
       bgcolor: "from-orange-200 to-orange-400",
       icon: <FaAtom className="w-12 h-12" />,
   image: BorolixImg,
@@ -130,7 +130,7 @@ const MicroNutrients = () => {
       crop: "All crops",
       pest: "Enhances soil fertility & water-holding capacity; Improves root growth & nutrient uptake; Boosts flowering & fruit quality; Strengthens soil for sustainable farming",
       dose: "As per recommendation",
-      color: "from-green-500 to-green-600",
+      color: "from-[#a4c67a] to-[#a4c67a]",
       bgcolor: "from-teal-200 to-teal-400",
       icon: <FaAtom className="w-12 h-12" />,
   image: SaferImg,
@@ -142,7 +142,7 @@ const MicroNutrients = () => {
       crop: "All crops",
       pest: "Provides balanced micronutrients; Zinc: grain & root development; Manganese: enhances photosynthesis; Iron: greener leaves (chlorophyll formation); Copper: strengthens resistance against stress",
       dose: "As per recommendation",
-      color: "from-green-500 to-green-600",
+      color: "from-[#a4c67a] to-[#a4c67a]",
       bgcolor: "from-indigo-200 to-indigo-400",
       icon: <FaAtom className="w-12 h-12" />,
   image: FlasherImg,
@@ -154,7 +154,7 @@ const MicroNutrients = () => {
       crop: "Cotton, All crops",
       pest: "Makes leaves greener & roots deeper; Produces early & more flowers/bolls in cotton; Reduces shedding of flowers/bolls; Increases size & weight of flowers/bolls; Improves resistance against diseases; Boosts yield with better quality",
       dose: "As per recommendation",
-      color: "from-green-500 to-green-600",
+      color: "from-[#a4c67a] to-[#a4c67a]",
       bgcolor: "from-gray-200 to-gray-400",
       icon: <FaAtom className="w-12 h-12" />,
   image: NPKImg,
@@ -171,19 +171,19 @@ const MicroNutrients = () => {
             <div className="absolute -top-10 -left-10 w-40 h-40 bg-green-100 rounded-full opacity-30 blur-2xl z-0"></div>
             <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-green-200 rounded-full opacity-20 blur-2xl z-0"></div>
             <div className="relative flex flex-col sm:flex-row items-center justify-center mb-4 z-10 gap-2 sm:gap-4">
-              <div className="bg-gradient-to-br from-green-200 to-green-400 p-3 sm:p-4 rounded-full shadow-lg animate-spin-slow mb-2 sm:mb-0">
-                <FaLeaf className="w-8 h-8 sm:w-10 sm:h-10 text-green-700" />
+              <div className="bg-gradient-to-br from-[#dcfab8] to-[#a4c67a] p-3 sm:p-4 rounded-full shadow-lg animate-spin-slow mb-2 sm:mb-0">
+                <FaLeaf className="w-8 h-8 sm:w-10 sm:h-10 text-[#7a9955]" />
               </div>
-              <h1 className="text-3xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-700 via-green-500 to-green-700 drop-shadow-lg">
+              <h1 className="text-3xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#a4c67a] via-[#6f8b4c] to-[#a4c67a] drop-shadow-lg">
                 Micro Nutrients Collection
               </h1>
             </div>
             <div className="flex flex-col items-center z-10 relative">
-              <p className="text-lg sm:text-2xl text-green-700 font-semibold mb-2 tracking-wide">
+              <p className="text-lg sm:text-2xl text-[#7a9955] font-semibold mb-2 tracking-wide">
                 Premium Plant Nutrition Solutions
               </p>
-              <span className="block w-20 sm:w-32 h-1 bg-gradient-to-r from-green-400 via-green-600 to-green-400 rounded-full mb-2"></span>
-              <span className="text-green-500 text-xs sm:text-sm italic">
+              <span className="block w-20 sm:w-32 h-1 bg-gradient-to-r from-[#a4c67a] via-[#6f8b4c] to-[#a4c67a] rounded-full mb-2"></span>
+              <span className="text-[#7a9955] text-xs sm:text-sm italic">
                 Trusted by professionals & farmers
               </span>
             </div>
@@ -386,7 +386,7 @@ const MicroNutrients = () => {
           {/* Footer */}
           <div className="text-center mt-10 sm:mt-16">
             <div className="bg-white rounded-lg p-4 sm:p-8 shadow-md">
-              <FaAtom className="w-10 h-10 sm:w-12 sm:h-12 text-green-600 mx-auto mb-4" />
+              <FaAtom className="w-10 h-10 sm:w-12 sm:h-12 text-[#7a9955] mx-auto mb-4" />
               <p className="text-gray-600 text-base sm:text-lg font-medium">
                 Professional plant nutrition solutions for optimal crop health
               </p>

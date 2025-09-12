@@ -93,12 +93,12 @@ const AboutUs = () => {
       <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-50 animate__animated animate__fadeIn">
         {/* Hero Section */}
         <section className="relative text-white py-16 md:py-20 px-4 md:px-6 animate__animated animate__fadeInDown" style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%2334D399;stop-opacity:1" /><stop offset="100%" style="stop-color:%2310B981;stop-opacity:1" /></linearGradient></defs><rect width="100%" height="100%" fill="url(%23grad1)"/><path d="M0,200 Q300,100 600,200 T1200,200 L1200,400 L0,400 Z" fill="%23065F46" opacity="0.3"/><circle cx="200" cy="150" r="20" fill="%23FFFFFF" opacity="0.1"/><circle cx="800" cy="120" r="15" fill="%23FFFFFF" opacity="0.1"/><circle cx="1000" cy="180" r="25" fill="%23FFFFFF" opacity="0.1"/></svg>')`
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%237a9955;stop-opacity:1" /><stop offset="100%" style="stop-color:%237a9955;stop-opacity:1" /></linearGradient></defs><rect width="100%" height="100%" fill="url(%23grad1)"/><path d="M0,200 Q300,100 600,200 T1200,200 L1200,400 L0,400 Z" fill="%23065F46" opacity="0.3"/><circle cx="200" cy="150" r="20" fill="%23FFFFFF" opacity="0.1"/><circle cx="800" cy="120" r="15" fill="%23FFFFFF" opacity="0.1"/><circle cx="1000" cy="180" r="25" fill="%23FFFFFF" opacity="0.1"/></svg>')`
         }}>
           <div className="absolute inset-0 bg-black/20"></div>
           <div className="relative max-w-6xl mx-auto text-center">
             <div className="flex justify-center mb-6">
-              <FaLeaf className="w-16 h-16 text-green-200" />
+              <FaLeaf className="w-16 h-16 text-[#a4c67a]" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               Agrolix Group
@@ -107,9 +107,9 @@ const AboutUs = () => {
               Empowering Pakistan's farming community since 2000 with quality
               agrochemical solutions
             </p>
-            <div className="flex justify-center items-center space-x-4 text-green-200">
+            <div className="flex justify-center items-center space-x-4 text-[#a4c67a]">
               <span className="text-lg">Est. 2000</span>
-              <div className="w-2 h-2 bg-green-200 rounded-full"></div>
+              <div className="w-2 h-2 bg-[#a4c67a] rounded-full"></div>
               <span className="text-lg">Bahawalpur, Pakistan</span>
             </div>
           </div>
@@ -160,7 +160,7 @@ const AboutUs = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 md:p-8 rounded-2xl">
                 <div className="flex items-center mb-6">
-                  <FaEye className="w-8 h-8 text-blue-600 mr-3" />
+                  <FaEye className="w-8 h-8 text-primary mr-3" />
                   <h3 className="text-3xl font-bold text-gray-800">
                     Our Vision
                   </h3>
@@ -203,11 +203,11 @@ const AboutUs = () => {
               {companies.map((company, idx) => (
                 <motion.div
                   key={idx}
-                  className="bg-white rounded-2xl shadow-lg p-4 md:p-6 flex flex-col items-center transition-shadow duration-300 cursor-pointer group w-full hover:bg-green-100 hover:border-green-400 border border-transparent"
+                  className="bg-white rounded-2xl shadow-lg p-4 md:p-6 flex flex-col items-center transition-shadow duration-300 cursor-pointer group w-full hover:bg-[#f1ffdf] hover:border-[#daf8b6] border border-transparent"
                   whileHover={{
                     scale: 1.08,
                     rotate: 4,
-                    boxShadow: "0 8px 32px 0 rgba(16, 185, 129, 0.25)",
+                    boxShadow: "0 8px 32px 0 #a4c67a",
                   }}
                   whileTap={{ scale: 0.98 }}
                 >
@@ -218,7 +218,7 @@ const AboutUs = () => {
                       className="w-16 h-16 object-contain rounded-full bg-white border border-green-200 shadow group-hover:bg-green-100 transition-colors duration-300"
                     />
                   </div>
-                  <span className="text-green-900 font-semibold text-base md:text-lg text-center group-hover:text-green-800 transition-colors duration-300">
+                  <span className="text-[#7a9955] font-semibold text-base md:text-lg text-center group-hover:text-[#7a9955] transition-colors duration-300">
                     {company.name}
                   </span>
                 </motion.div>
@@ -251,9 +251,9 @@ const AboutUs = () => {
                       <Link
                         key={index}
                         to={getPath(product)}
-                        className="bg-green-50 p-2 md:p-4 rounded-lg text-center hover:bg-green-100 transition-colors duration-300"
+                        className="bg-[#f7d9ff] text-[#611b74] p-2 md:p-4 rounded-lg text-center transition-colors duration-300"
                       >
-                        <span className="font-medium text-green-800 text-sm md:text-base">
+                        <span className="font-medium text-[#611b74] text-sm md:text-base">
                           {product}
                         </span>
                       </Link>
@@ -273,7 +273,7 @@ const AboutUs = () => {
                   {facilities.map((facility, index) => (
                     <span
                       key={index}
-                      className="bg-blue-100 text-blue-800 px-2 md:px-4 py-1 md:py-2 rounded-full font-medium text-xs md:text-base"
+                      className="bg-[#f7d9ff] text-[#611b74] px-2 md:px-4 py-1 md:py-2 rounded-full font-medium text-xs md:text-base"
                     >
                       {facility}
                     </span>
@@ -325,20 +325,20 @@ const AboutUs = () => {
                   <motion.div
                     key={index}
                     ref={cardRef}
-                    className="bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 w-full hover:bg-green-100 hover:border-green-400 border border-transparent group"
+                    className="bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 w-full hover:bg-[#f6e4ff] hover:border-[#611b74] border border-transparent group"
                     style={{ x: springX, y: springY }}
                     onMouseMove={handleMouseMove}
                     onMouseLeave={handleMouseLeave}
                   >
                     <div className="flex items-center mb-4 md:mb-6">
-                      <div className="bg-green-100 p-2 md:p-3 rounded-full mr-2 md:mr-4 group-hover:bg-green-400 transition-colors duration-300">
-                        <IconComponent className="w-7 md:w-8 h-7 md:h-8 text-green-600 group-hover:text-white transition-colors duration-300" />
+                      <div className="bg-[#f8dfff] p-2 md:p-3 rounded-full mr-2 md:mr-4 group-hover:bg-[#611b74] transition-colors duration-300">
+                        <IconComponent className="w-7 md:w-8 h-7 md:h-8 text-[#611b74] group-hover:text-white transition-colors duration-300" />
                       </div>
-                      <h3 className="text-lg md:text-2xl font-bold text-gray-800 group-hover:text-green-800 transition-colors duration-300">
+                      <h3 className="text-lg md:text-2xl font-bold text-gray-800 group-hover:text-[#611b74] transition-colors duration-300">
                         {value.title}
                       </h3>
                     </div>
-                    <p className="text-gray-600 leading-relaxed text-sm md:text-base group-hover:text-green-800 transition-colors duration-300">
+                    <p className="text-gray-600 leading-relaxed text-sm md:text-base group-hover:text-[#611b74] transition-colors duration-300">
                       {value.description}
                     </p>
                   </motion.div>
@@ -418,7 +418,7 @@ const AboutUs = () => {
         </section>
 
         {/* Thank You Section */}
-        <section className="py-10 md:py-16 px-4 md:px-6 bg-gradient-to-r from-green-600 to-emerald-600 text-white animate__animated animate__fadeIn">
+        <section className="py-10 md:py-16 px-4 md:px-6 bg-gradient-to-r from-green-600 to-[#611b74]  text-white animate__animated animate__fadeIn">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-6">
               Thank You for Your Trust

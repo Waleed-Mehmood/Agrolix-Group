@@ -111,19 +111,19 @@ const Seeds = () => {
               <div className="absolute -top-10 -left-10 w-32 h-32 md:w-40 md:h-40 bg-green-100 rounded-full opacity-30 blur-2xl z-0"></div>
               <div className="absolute -bottom-10 -right-10 w-32 h-32 md:w-40 md:h-40 bg-green-200 rounded-full opacity-20 blur-2xl z-0"></div>
               <div className="relative flex flex-col md:flex-row items-center justify-center mb-3 md:mb-5 z-10 gap-2 md:gap-6">
-                <div className="bg-gradient-to-br from-green-200 to-green-400 p-2 md:p-4 rounded-full shadow-lg animate-spin-slow mb-2 md:mb-0">
-                  <FaSeedling className="w-7 h-7 md:w-10 md:h-10 text-green-700" />
+                <div className="bg-gradient-to-br from-[#dcfab8] to-[#a4c67a] p-2 md:p-4 rounded-full shadow-lg animate-spin-slow mb-2 md:mb-0">
+                  <FaSeedling className="w-7 h-7 md:w-10 md:h-10 text-[#7a9955]" />
                 </div>
-                <h1 className="text-2xl xs:text-3xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-700 via-green-500 to-green-700 drop-shadow-lg leading-tight">
+                <h1 className="text-2xl xs:text-3xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#a4c67a] via-[#6f8b4c] to-[#a4c67a] drop-shadow-lg leading-tight">
                   Passion Agro Seeds
                 </h1>
               </div>
               <div className="flex flex-col items-center z-10 relative">
-                <p className="text-base xs:text-lg md:text-2xl text-green-700 font-semibold mb-2 tracking-wide text-center max-w-xl">
+                <p className="text-base xs:text-lg md:text-2xl text-[#7a9955] font-semibold mb-2 tracking-wide text-center max-w-xl">
                   Trusted agricultural partner delivering high-quality seeds
                 </p>
-                <span className="block w-16 md:w-32 h-1 bg-gradient-to-r from-green-400 via-green-600 to-green-400 rounded-full mb-2"></span>
-                <span className="text-green-500 text-xs md:text-sm italic">
+                <span className="block w-16 md:w-32 h-1 bg-gradient-to-r from-[#a4c67a] via-[#6f8b4c] to-[#a4c67a] rounded-full mb-2"></span>
+                <span className="text-[#7a9955] text-xs md:text-sm italic">
                   Maximum productivity and profitability for farmers
                 </span>
               </div>
@@ -145,7 +145,7 @@ const Seeds = () => {
                 <div className="prose prose-lg max-w-none">
                   <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-6">
                     Passion Agro Seeds is a{" "}
-                    <span className="font-semibold text-green-600">
+                    <span className="font-semibold text-[#7a9955]">
                       trusted name in the agricultural sector
                     </span>
                     , dedicated to delivering high-quality seeds that empower
@@ -158,12 +158,12 @@ const Seeds = () => {
 
                   <p className="text-lg text-gray-700 leading-relaxed mb-6">
                     Our commitment to{" "}
-                    <span className="font-semibold text-green-600">
+                    <span className="font-semibold text-[#7a9955]">
                       innovation, quality assurance, and farmer success
                     </span>{" "}
                     has positioned us as a growing leader in the seed industry.
                     At Passion Agro Seeds, we believe that
-                    <span className="font-semibold text-green-600">
+                    <span className="font-semibold text-[#7a9955]">
                       {" "}
                       every seed carries the potential to transform lives
                     </span>
@@ -172,14 +172,14 @@ const Seeds = () => {
 
                   <p className="text-lg text-gray-700 leading-relaxed">
                     With a strong focus on{" "}
-                    <span className="font-semibold text-green-600">
+                    <span className="font-semibold text-[#7a9955]">
                       technology, sustainability, and farmer-centric solutions
                     </span>
                     , we continuously strive to bring superior seed genetics
                     that ensure better germination, improved disease resistance,
                     and higher yields. Together with our farming community, we
                     are sowing the seeds of progress for a
-                    <span className="font-semibold text-green-600">
+                    <span className="font-semibold text-[#7a9955]">
                       {" "}
                       greener and more prosperous future
                     </span>
@@ -217,7 +217,7 @@ const Seeds = () => {
                 </div>
 
                 {/* Floating Achievement Badge */}
-                <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-green-600 to-emerald-600 text-white p-6 rounded-2xl shadow-2xl">
+                <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-green-600 to-[#7a9955] text-white p-6 rounded-2xl shadow-2xl">
                   <FaTrophy className="w-8 h-8 mb-2" />
                   <p className="font-bold text-lg">Industry Leader</p>
                   <p className="text-sm opacity-90">Growing Excellence</p>
@@ -269,7 +269,7 @@ const Seeds = () => {
           <div className="mb-20 px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8 md:mb-12">
               <div className="flex items-center justify-center mb-4">
-                <FaSeedling className="w-6 h-6 md:w-8 md:h-8 text-green-600 mr-3 md:mr-4" />
+                <FaSeedling className="w-6 h-6 md:w-8 md:h-8 text-[#7a9955] mr-3 md:mr-4" />
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
                   Our Seed Varieties
                 </h2>
@@ -310,15 +310,15 @@ const Seeds = () => {
               {/* Content */}
               <div className="relative z-10">
                 <div className="bg-white bg-opacity-40 backdrop-blur-sm w-24 h-24 rounded-full mx-auto mb-8 p-6 shadow-lg">
-                  <FaHandshake className="w-full h-full text-green-600" />
+                  <FaHandshake className="w-full h-full text-[#611b74]" />
                 </div>
                 
                 <div className="space-y-6 max-w-4xl mx-auto">
-                  <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-700 via-green-600 to-emerald-700">
+                  <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#611b74] via-[#9d49b4] to-[#611b74] ">
                     Growing Success Together
                   </h2>
                   
-                  <div className="w-32 h-1 bg-gradient-to-r from-green-400 via-green-500 to-emerald-500 mx-auto rounded-full"></div>
+                  <div className="w-32 h-1 bg-gradient-to-r from-[#611b74] via-[#b354ce] to-[#611b74] mx-auto rounded-full"></div>
                   
                   <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
                     Join the growing community of successful farmers who trust Passion Agro Seeds. Together, we're cultivating prosperity and sustainability for generations to come.
@@ -326,16 +326,16 @@ const Seeds = () => {
 
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
                     <div className="bg-white bg-opacity-60 backdrop-blur-sm p-6 rounded-2xl shadow-md">
-                      <FaSeedling className="w-10 h-10 text-green-600 mx-auto mb-4" />
-                      <p className="font-semibold text-green-800">Premium Quality Seeds</p>
+                      <FaSeedling className="w-10 h-10 text-[#611b74] mx-auto mb-4" />
+                      <p className="font-semibold text-[#611b74]">Premium Quality Seeds</p>
                     </div>
                     <div className="bg-white bg-opacity-60 backdrop-blur-sm p-6 rounded-2xl shadow-md">
-                      <FaUsers className="w-10 h-10 text-green-600 mx-auto mb-4" />
-                      <p className="font-semibold text-green-800">Expert Support</p>
+                      <FaUsers className="w-10 h-10 text-[#611b74] mx-auto mb-4" />
+                      <p className="font-semibold text-[#611b74]">Expert Support</p>
                     </div>
                     <div className="bg-white bg-opacity-60 backdrop-blur-sm p-6 rounded-2xl shadow-md">
-                      <FaChartLine className="w-10 h-10 text-green-600 mx-auto mb-4" />
-                      <p className="font-semibold text-green-800">Proven Results</p>
+                      <FaChartLine className="w-10 h-10 text-[#611b74] mx-auto mb-4" />
+                      <p className="font-semibold text-[#611b74]">Proven Results</p>
                     </div>
                   </div>
                 </div>

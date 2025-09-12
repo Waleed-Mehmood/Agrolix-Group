@@ -120,17 +120,18 @@ const Companies = () => {
       <div className="min-h-screen bg-gray-50">
         {/* Banner Section */}
         <motion.div
-          className="relative h-72 sm:h-96 bg-cover bg-center bg-no-repeat flex items-center justify-center"
+          className="relative h-72 sm:h-96 bg-cover bg-center bg-no-repeat flex items-center justify-center text-white "
           style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 400\"><defs><linearGradient id=\"grad1\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\"><stop offset=\"0%\" style=\"stop-color:%2334D399;stop-opacity:1\" /><stop offset=\"100%\" style=\"stop-color:%2310B981;stop-opacity:1\" /></linearGradient></defs><rect width=\"100%\" height=\"100%\" fill=\"url(%23grad1)\"/><path d=\"M0,200 Q300,100 600,200 T1200,200 L1200,400 L0,400 Z\" fill=\"%23065F46\" opacity=\"0.3\"/><circle cx=\"200\" cy=\"150\" r=\"20\" fill=\"%23FFFFFF\" opacity=\"0.1\"/><circle cx=\"800\" cy=\"120\" r=\"15\" fill=\"%23FFFFFF\" opacity=\"0.1\"/><circle cx=\"1000\" cy=\"180\" r=\"25\" fill=\"%23FFFFFF\" opacity=\"0.1\"/></svg>')`
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%237a9955;stop-opacity:1" /><stop offset="100%" style="stop-color:%237a9955;stop-opacity:1" /></linearGradient></defs><rect width="100%" height="100%" fill="url(%23grad1)"/><path d="M0,200 Q300,100 600,200 T1200,200 L1200,400 L0,400 Z" fill="%23065F46" opacity="0.3"/><circle cx="200" cy="150" r="20" fill="%23FFFFFF" opacity="0.1"/><circle cx="800" cy="120" r="15" fill="%23FFFFFF" opacity="0.1"/><circle cx="1000" cy="180" r="25" fill="%23FFFFFF" opacity="0.1"/></svg>')`
           }}
           variants={bannerVariants}
           initial="hidden"
           animate="visible"
         >
-          <div className="text-center text-white px-2 sm:px-4 max-w-4xl w-full mx-auto">
+          <div className="absolute inset-0 bg-black/20"></div>
+          <div className="text-center px-2 sm:px-4 max-w-4xl w-full mx-auto">
             <div className="flex flex-col sm:flex-row justify-center items-center mb-6 gap-2 sm:gap-6">
-              <FaLeaf className="w-12 sm:w-16 h-12 sm:h-16 text-green-400 mr-0 sm:mr-4" />
+              <FaLeaf className="w-12 sm:w-16 h-12 sm:h-16 text-[#a4c67a] mr-0 sm:mr-4" />
               <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold">Group Companies</h1>
             </div>
             <p className="text-base sm:text-xl md:text-2xl font-light leading-relaxed opacity-90">
@@ -138,11 +139,11 @@ const Companies = () => {
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center mt-6 gap-4 sm:gap-8">
               <div className="flex items-center">
-                <FaAward className="w-5 sm:w-6 h-5 sm:h-6 text-yellow-400 mr-2" />
+                <FaAward className="w-5 sm:w-6 h-5 sm:h-6 text-[#a4c67a] mr-2" />
                 <span className="text-base sm:text-lg">20+ Years Experience</span>
               </div>
               <div className="flex items-center">
-                <FaUsers className="w-5 sm:w-6 h-5 sm:h-6 text-blue-400 mr-2" />
+                <FaUsers className="w-5 sm:w-6 h-5 sm:h-6 text-[#a4c67a] mr-2" />
                 <span className="text-base sm:text-lg">Trusted by Farmers</span>
               </div>
             </div>
@@ -247,7 +248,7 @@ const Companies = () => {
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
             >
-              <div className="bg-gradient-to-r from-green-600 to-blue-600 rounded-3xl p-6 sm:p-12 text-white shadow-2xl">
+              <div className="bg-gradient-to-r from-green-600 to-[#611b74] rounded-3xl p-6 sm:p-12 text-white shadow-2xl">
                 <div className="flex flex-row justify-center mb-4 sm:mb-6 gap-2 sm:gap-4">
                   <FaLeaf className="w-8 sm:w-12 h-8 sm:h-12 text-green-300" />
                   <FaSeedling className="w-8 sm:w-12 h-8 sm:h-12 text-yellow-300" />

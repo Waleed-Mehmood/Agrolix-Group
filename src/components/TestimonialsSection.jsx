@@ -162,7 +162,7 @@ const TestimonialsSection = () => {
       <div className="container mx-auto px-2 sm:px-4">
         {/* Section Header */}
   <div className="text-center mb-8 sm:mb-10 md:mb-12">
-          <div className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
+          <div className="inline-flex items-center gap-2 bg-[#e6ffc7] text-green-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
             <FaStar className="text-yellow-500" />
             Customer Reviews
           </div>

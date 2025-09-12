@@ -15,42 +15,42 @@ const ProductCategories = () => {
       name: "Fungicides",
       path: "/products/fungicides",
       description: "Effective solutions for fungal disease control",
-      icon: <FaLeaf className="text-4xl text-green-500" />,
+      icon: <FaLeaf className="text-4xl text-[#a4c67a]" />,
       color: "from-green-400 to-green-600"
     },
     {
       name: "Herbicides", 
       path: "/products/herbicides",
       description: "Advanced weed control products",
-      icon: <FaSeedling className="text-4xl text-yellow-500" />,
+      icon: <FaSeedling className="text-4xl text-[#a4c67a]" />,
       color: "from-green-400 to-green-600"
     },
     {
       name: "Insecticides",
       path: "/products/insecticides", 
       description: "Protection against harmful insects",
-      icon: <FaBug className="text-4xl text-red-500" />,
+      icon: <FaBug className="text-4xl text-[#a4c67a]" />,
       color: "from-green-400 to-green-600"
     },
     {
       name: "Granules",
       path: "/products/granules",
       description: "Slow-release agricultural solutions",
-      icon: <FaDotCircle className="text-4xl text-purple-500" />,
+      icon: <FaDotCircle className="text-4xl text-[#a4c67a]" />,
       color: "from-green-400 to-green-600"
     },
     {
       name: "Micro Nutrients",
       path: "/products/micro-nutrients",
       description: "Essential nutrients for plant health",
-      icon: <FaAtom className="text-4xl text-blue-500" />,
+      icon: <FaAtom className="text-4xl text-[#a4c67a]" />,
       color: "from-green-400 to-green-600"
     },
     {
       name: "Fertilizers",
       path: "/products/fertilizers",
       description: "Complete plant nutrition solutions",
-      icon: <FaTint className="text-4xl text-indigo-500" />,
+      icon: <FaTint className="text-4xl text-[#a4c67a]" />,
       color: "from-green-400 to-green-600"
     }
   ];

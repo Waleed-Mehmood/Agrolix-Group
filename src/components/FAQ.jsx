@@ -30,8 +30,8 @@ const FAQ = () => {
   <div className="py-16" style={{ background: 'linear-gradient(to bottom, #fff, #e6f2d7)' }}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 sm:mb-12">
-          <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium mb-3 sm:mb-4 text-green-800 bg-green-100">
-            <span className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-[#a4c67a] rounded-full animate-pulse"></span>
+          <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium mb-3 sm:mb-4 text-green-800 bg-[#e6ffc7]">
+            <span className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-[#bddd97] rounded-full animate-pulse"></span>
             Have Questions?
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-3 sm:mb-4">

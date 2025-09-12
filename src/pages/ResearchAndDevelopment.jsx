@@ -69,9 +69,9 @@ const ResearchAndDevelopment = () => {
               transition={{ duration: 0.7 }}
             >
               <div className="flex items-center space-x-3 mb-6">
-                <div className="p-3 bg-green-100 rounded-full">
+                <div className="p-3 bg-gradient-to-r from-[#ebffd3] to-[#e8ffcd] rounded-full">
                   <svg
-                    className="w-8 h-8 text-green-600"
+                    className="w-8 h-8 text-[#7a9955]"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -115,9 +115,9 @@ const ResearchAndDevelopment = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.1 }}
                 >
-                  <div className="p-2 bg-green-100 rounded-full flex-shrink-0">
+                  <div className="p-2 bg-gradient-to-r from-[#ebffd3] to-[#e8ffcd] rounded-full flex-shrink-0">
                     <svg
-                      className="w-6 h-6 text-green-600"
+                      className="w-6 h-6 text-[#7a9955]"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -143,9 +143,9 @@ const ResearchAndDevelopment = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.2 }}
                 >
-                  <div className="p-2 bg-green-100 rounded-full flex-shrink-0">
+                  <div className="p-2 bg-gradient-to-r from-[#ebffd3] to-[#e8ffcd] rounded-full flex-shrink-0">
                     <svg
-                      className="w-6 h-6 text-green-600"
+                      className="w-6 h-6 text-[#7a9955]"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -175,9 +175,9 @@ const ResearchAndDevelopment = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.3 }}
                 >
-                  <div className="p-2 bg-green-100 rounded-full flex-shrink-0">
+                  <div className="p-2 bg-gradient-to-r from-[#ebffd3] to-[#e8ffcd] rounded-full flex-shrink-0">
                     <svg
-                      className="w-6 h-6 text-green-600"
+                      className="w-6 h-6 text-[#7a9955]"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -206,9 +206,9 @@ const ResearchAndDevelopment = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.4 }}
                 >
-                  <div className="p-2 bg-green-100 rounded-full flex-shrink-0">
+                  <div className="p-2 bg-gradient-to-r from-[#ebffd3] to-[#e8ffcd] rounded-full flex-shrink-0">
                     <svg
-                      className="w-6 h-6 text-green-600"
+                      className="w-6 h-6 text-[#7a9955]"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -262,7 +262,7 @@ const ResearchAndDevelopment = () => {
                 transition={{ delay: 0.5, duration: 0.6 }}
               >
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-green-600 mb-1">
+                  <div className="text-3xl font-bold text-[#611b74] mb-1">
                     100+
                   </div>
                   <div className="text-gray-600 text-sm font-medium">

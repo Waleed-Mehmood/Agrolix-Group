@@ -88,10 +88,10 @@ export default function QualityControl() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-full flex items-center justify-center">
-                  <FaShieldAlt className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" />
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-[#ebffd3] to-[#e8ffcd] rounded-full flex items-center justify-center">
+                  <FaShieldAlt className="w-5 h-5 sm:w-6 sm:h-6 text-[#7a9955]" />
                 </div>
-                <span className="text-green-600 font-semibold text-base sm:text-lg">Excellence in Quality Assurance</span>
+                <span className="text-[#7a9955] font-semibold text-base sm:text-lg">Excellence in Quality Assurance</span>
               </motion.div>
 
               <motion.h2
@@ -123,17 +123,17 @@ export default function QualityControl() {
 
               {/* Achievement Highlight */}
               <motion.div
-                className="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 p-4 sm:p-6 rounded-r-lg"
+                className="bg-gradient-to-r from-[#ebffd3] to-[#e8ffcd] border-l-4 border-[#7a9955] p-4 sm:p-6 rounded-r-lg"
                 initial={{ opacity: 0, x: -30 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
               >
                 <div className="flex items-start space-x-3">
-                  <FaAward className="w-6 h-6 text-green-600 mt-1 flex-shrink-0" />
+                  <FaAward className="w-6 h-6 text-[#7a9955] mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">Historic Achievement</h3>
                     <p className="text-gray-700">
-                      Agrolix Group quality control laboratory is the <span className="font-semibold text-green-700">first Lab in Bahawalpur</span> to be accredited to <span className="font-semibold">ISO-17025:2017</span> in 2021 by PNAC Islamabad.
+                      Agrolix Group quality control laboratory is the <span className="font-semibold text-[#7a9955]">first Lab in Bahawalpur</span> to be accredited to <span className="font-semibold">ISO-17025:2017</span> in 2021 by PNAC Islamabad.
                     </p>
                   </div>
                 </div>
@@ -208,13 +208,13 @@ export default function QualityControl() {
                 ].map((feature, index) => (
                   <motion.div
                     key={index}
-                    className="flex items-center space-x-2 sm:space-x-3 p-2 sm:p-3 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg"
+                    className="flex items-center space-x-2 sm:space-x-3 p-2 sm:p-3 bg-gradient-to-r from-[#ebffd3] to-[#e8ffcd] rounded-lg"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.3 }}
                     transition={{ duration: 0.4, delay: index * 0.1 }}
                   >
-                    <feature.icon className="w-4 h-4 sm:w-5 sm:h-5 text-green-600 flex-shrink-0" />
+                    <feature.icon className="w-4 h-4 sm:w-5 sm:h-5 text-[#7a9955] flex-shrink-0" />
                     <span className="text-gray-700 font-medium text-sm sm:text-base">{feature.text}</span>
                   </motion.div>
                 ))}
@@ -271,13 +271,13 @@ export default function QualityControl() {
               </div>
               {/* Decorative Elements */}
               <motion.div
-                className="absolute -top-2 sm:-top-4 -right-2 sm:-right-4 w-12 sm:w-24 h-12 sm:h-24 bg-green-200 rounded-full opacity-60"
+                className="absolute -top-2 sm:-top-4 -right-2 sm:-right-4 w-12 sm:w-24 h-12 sm:h-24 bg-gradient-to-r from-[#ebffd3] to-[#e8ffcd] rounded-full opacity-60"
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
               ></motion.div>
               <motion.div
-                className="absolute -bottom-3 sm:-bottom-6 -left-3 sm:-left-6 w-8 sm:w-16 h-8 sm:h-16 bg-emerald-300 rounded-full opacity-40"
+                className="absolute -bottom-3 sm:-bottom-6 -left-3 sm:-left-6 w-8 sm:w-16 h-8 sm:h-16 bg-gradient-to-r from-[#ebffd3] to-[#e8ffcd] rounded-full opacity-40"
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.7 }}
@@ -321,14 +321,14 @@ export default function QualityControl() {
               }].map((stat, idx) => (
                 <motion.div
                   key={idx}
-                  className="bg-white p-4 sm:p-8 rounded-xl shadow-lg flex flex-col items-center transition duration-300 hover:bg-green-50 hover:shadow-2xl hover:-translate-y-1 hover:border-green-400 hover:border hover:text-green-700"
+                  className="bg-white p-4 sm:p-8 rounded-xl shadow-lg flex flex-col items-center transition duration-300 hover:bg-[#f8dfff] hover:shadow-2xl hover:-translate-y-1 hover:border-[#611b74] hover:border hover:text-green-700"
                   initial={{ opacity: 0, y: 40, scale: 0.8 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
                   viewport={{ once: true, amount: 0.3 }}
                   transition={{ duration: 0.6, delay: idx * 0.2 }}
                 >
-                  <stat.icon className="text-2xl sm:text-4xl text-green-600 mb-2 sm:mb-3" />
-                  <div className="text-lg sm:text-2xl font-bold text-green-700 mb-1">{stat.title}</div>
+                  <stat.icon className="text-2xl sm:text-4xl text-[#611b74] mb-2 sm:mb-3" />
+                  <div className="text-lg sm:text-2xl font-bold text-[#611b74] mb-1">{stat.title}</div>
                   <div className="text-gray-700 font-medium text-sm sm:text-base">{stat.subtitle}</div>
                 </motion.div>
               ))}

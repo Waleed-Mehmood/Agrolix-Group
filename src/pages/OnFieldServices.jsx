@@ -103,8 +103,8 @@ const OnFieldServices = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              <div className="bg-green-100 p-4 rounded-full">
-                <GiFarmer className="text-5xl text-green-600" />
+              <div className="bg-gradient-to-r from-[#ebffd3] to-[#e8ffcd] p-4 rounded-full">
+                <GiFarmer className="text-5xl text-[#7a9955]" />
               </div>
             </motion.div>
             <h2 className="text-3xl font-bold text-gray-800 mb-6">
@@ -122,38 +122,38 @@ const OnFieldServices = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {[
               {
-                icon: <FaGraduationCap className="text-2xl text-green-600" />,
-                bg: "bg-green-100",
+                icon: <FaGraduationCap className="text-2xl text-[#611b74]" />,
+                bg: "bg-[#f7d9ff]",
                 title: "Expert Team",
                 desc: "Dedicated agri graduates providing professional guidance and support across Pakistan"
               },
               {
-                icon: <FaUsers className="text-2xl text-blue-600" />,
-                bg: "bg-blue-100",
+                icon: <FaUsers className="text-2xl text-[#611b74]" />,
+                bg: "bg-[#f7d9ff]",
                 title: "Field Visits",
                 desc: "Regular on-site visits to monitor crop health and provide timely interventions"
               },
               {
-                icon: <GiPlantSeed className="text-2xl text-yellow-600" />,
-                bg: "bg-yellow-100",
+                icon: <GiPlantSeed className="text-2xl text-[#611b74]" />,
+                bg: "bg-[#f7d9ff]",
                 title: "Demonstrations",
                 desc: "Practical field demonstrations to showcase latest pest control solutions"
               },
               {
-                icon: <FaLeaf className="text-2xl text-purple-600" />,
-                bg: "bg-purple-100",
+                icon: <FaLeaf className="text-2xl text-[#611b74]" />,
+                bg: "bg-[#f7d9ff]",
                 title: "Awareness Sessions",
                 desc: "Educational programs to help farmers adopt effective agricultural practices"
               },
               {
-                icon: <FaHandshake className="text-2xl text-red-600" />,
-                bg: "bg-red-100",
+                icon: <FaHandshake className="text-2xl text-[#611b74]" />,
+                bg: "bg-[#f7d9ff]",
                 title: "Partnerships",
                 desc: "Building lasting relationships based on trust and proven performance"
               },
               {
-                icon: <FaChartLine className="text-2xl text-orange-600" />,
-                bg: "bg-orange-100",
+                icon: <FaChartLine className="text-2xl text-[#611b74]" />,
+                bg: "bg-[#f7d9ff]",
                 title: "Improved Yield",
                 desc: "Helping farmers achieve better productivity and increased crop yields"
               }
@@ -178,7 +178,7 @@ const OnFieldServices = () => {
 
           {/* Mission Statement */}
           <motion.div
-            className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-10 text-center"
+            className="bg-gradient-to-r from-[#ebffd3] to-[#e8ffcd] rounded-2xl p-10 text-center"
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -191,7 +191,7 @@ const OnFieldServices = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              <div className="bg-green-600 p-4 rounded-full">
+              <div className="bg-[#7a9955] p-4 rounded-full">
                 <MdAgriculture className="text-4xl text-white" />
               </div>
             </motion.div>
@@ -214,7 +214,7 @@ const OnFieldServices = () => {
               Our aim is not just to sell products, but to build lasting partnerships based on trust and performance. By addressing pest challenges directly in the field, we empower farmers to improve yield and productivity.
             </motion.p>
             <motion.p
-              className="text-xl font-semibold text-green-700"
+              className="text-xl font-semibold text-[#7a9955]"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

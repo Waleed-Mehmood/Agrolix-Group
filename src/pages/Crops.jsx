@@ -192,19 +192,19 @@ const Crops = () => {
               <div className="absolute -top-10 -left-10 w-32 h-32 md:w-40 md:h-40 bg-green-100 rounded-full opacity-30 blur-2xl z-0"></div>
               <div className="absolute -bottom-10 -right-10 w-32 h-32 md:w-40 md:h-40 bg-green-200 rounded-full opacity-20 blur-2xl z-0"></div>
               <div className="relative flex flex-col md:flex-row items-center justify-center mb-3 md:mb-5 z-10 gap-2 md:gap-6">
-                <div className="bg-gradient-to-br from-green-200 to-green-400 p-2 md:p-4 rounded-full shadow-lg animate-spin-slow mb-2 md:mb-0">
-                  <FaLeaf className="w-7 h-7 md:w-10 md:h-10 text-green-700" />
+                <div className="bg-gradient-to-br from-[#dcfab8] to-[#a4c67a] p-2 md:p-4 rounded-full shadow-lg animate-spin-slow mb-2 md:mb-0">
+                  <FaLeaf className="w-7 h-7 md:w-10 md:h-10 text-[#7a9955]" />
                 </div>
-                <h1 className="text-2xl xs:text-3xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-700 via-green-500 to-green-700 drop-shadow-lg leading-tight">
+                <h1 className="text-2xl xs:text-3xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#a4c67a] via-[#6f8b4c] to-[#a4c67a] drop-shadow-lg leading-tight">
                   Major Crops of Pakistan
                 </h1>
               </div>
               <div className="flex flex-col items-center z-10 relative">
-                <p className="text-base xs:text-lg md:text-2xl text-green-700 font-semibold mb-2 tracking-wide text-center max-w-xl">
+                <p className="text-base xs:text-lg md:text-2xl text-[#7a9955] font-semibold mb-2 tracking-wide text-center max-w-xl">
                   Pakistan's agricultural sector forms the backbone of its economy
                 </p>
-                <span className="block w-16 md:w-32 h-1 bg-gradient-to-r from-green-400 via-green-600 to-green-400 rounded-full mb-2"></span>
-                <span className="text-green-500 text-xs md:text-sm italic">
+                <span className="block w-16 md:w-32 h-1 bg-gradient-to-r from-[#a4c67a] via-[#6f8b4c] to-[#a4c67a] rounded-full mb-2"></span>
+                <span className="text-[#7a9955] text-xs md:text-sm italic">
                   Contributing to food security, GDP & rural prosperity
                 </span>
               </div>
@@ -383,7 +383,7 @@ const Crops = () => {
           <div className="text-center mt-16">
             <div className="bg-white rounded-2xl p-8 shadow-lg max-w-4xl mx-auto">
               <div className="flex items-center justify-center mb-4">
-                <FaGlobeAmericas className="w-8 h-8 text-green-600 mr-3" />
+                <FaGlobeAmericas className="w-8 h-8 text-[#7a9955] mr-3" />
                 <h3 className="text-2xl font-bold text-gray-800">
                   Agricultural Excellence
                 </h3>
