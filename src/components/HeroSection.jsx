@@ -96,14 +96,14 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="relative w-[100vw] sm:w-full h-[24vh] sm:h-[50vh] md:h-[60vh] lg:h-[80vh] overflow-hidden">
+    <div className="relative w-full sm:w-full h-[18vh] sm:h-[50vh] md:h-[60vh] lg:h-[80vh] overflow-hidden">
       <Slider {...settings}>
         {slides.map((slide, idx) => (
-          <div key={idx} className="relative w-[100vw] sm:w-full h-[24vh] sm:h-[50vh] md:h-[60vh] lg:h-[80vh]">
+          <div key={idx} className="relative w-full sm:w-full h-[18vh] sm:h-[50vh] md:h-[60vh] lg:h-[80vh]">
             <img
               src={slide.bg}
               alt={slide.heading}
-              className="w-[100vh] sm:w-full h-full object-cover brightness-75"
+              className="w-full sm:w-full h-full object-cover brightness-75"
               style={{ maxWidth: '100vw', width: '100vw', minWidth: '100vw', height: '100%', objectFit: 'cover' }}
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
