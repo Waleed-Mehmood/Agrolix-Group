@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebookF, FaInstagram, FaTiktok, FaLinkedinIn, FaArrowRight, FaEnvelope, FaPhone, FaMapMarkerAlt, FaLeaf } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaTiktok, FaLinkedinIn, FaArrowRight, FaEnvelope, FaPhone, FaMapMarkerAlt, FaLeaf, FaWhatsapp } from 'react-icons/fa';
 import logo from '../assets/agrolix-logo.png';
 import { Link } from 'react-router-dom';
 
@@ -180,13 +180,15 @@ export default function Footer() {
               </a>
               
               <a 
-                href="tel:03018656824"
+                href="https://wa.me/923018656824"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center space-x-3 text-gray-300 hover:text-green-400 transition-colors duration-200 group text-base"
               >
                 <div className="w-8 h-8 bg-green-400 bg-opacity-20 rounded-lg flex items-center justify-center group-hover:bg-opacity-30 transition-all">
-                  <FaPhone className="w-4 h-4 text-green-400" />
+                  <FaWhatsapp className="w-5 h-5 text-green-400" />
                 </div>
-                <span>0301-8656824</span>
+                <span>03018656824</span>
               </a>
               
               <div className="flex items-start space-x-3 text-gray-300 text-base">
