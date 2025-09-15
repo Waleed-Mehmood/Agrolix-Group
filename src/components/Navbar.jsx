@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { HiMenu, HiX, HiChevronDown } from 'react-icons/hi';
-import agrolixLogo from '../assets/earth.png';
+import agrolixLogo from '../assets/agrolix-logo.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,7 +47,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-gradient-to-r from-[#7a9955] via-[#7a9955] to-[#7a9955] shadow-lg z-50 py-4 xl:py-5 ">
+    <nav className="shadow-lg z-50 py-4 xl:py-5 ">
       <div className="mx-auto px-4 sm:px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo Section */}
@@ -65,7 +65,7 @@ const Navbar = () => {
                   <div className="relative">
                     <button
                       onClick={() => handleDropdownToggle(link.name)}
-                      className="text-white hover:bg-white hover:text-[#7a9955] px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 flex items-center space-x-1 group"
+                      className="text-[#9241a9] hover:bg-[#9241a9] hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 flex items-center space-x-1 group"
                     >
                       <span>{link.name}</span>
                         <HiChevronDown className="w-4 h-4 group-hover:rotate-180 transition-transform duration-300" />
@@ -76,7 +76,7 @@ const Navbar = () => {
                           <Link
                             key={idx}
                             to={item.href}
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#f1ffe2] hover:text-[#7a9955] transition-colors duration-200"
+                            className="block px-4 py-2 text-sm text-[#9241a9] hover:bg-[#9241a9] hover:text-white transition-colors duration-200"
                           >
                             {item.name}
                           </Link>
@@ -87,9 +87,9 @@ const Navbar = () => {
                 ) : (
                   <Link
                     to={link.href}
-                    className="text-white hover:bg-white hover:text-[#7a9955] px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 relative overflow-hidden group">
+                    className="text-[#9241a9] hover:bg-[#9241a9] hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 relative overflow-hidden group">
                     <span className="relative z-10">{link.name}</span>
-                    <div className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                    <div className="absolute inset-0 bg-[#9241a9] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                   </Link>
                 )}
               </div>
@@ -131,7 +131,7 @@ const Navbar = () => {
                   <div className="">
                     <button
                       onClick={() => handleDropdownToggle(link.name)}
-                      className="w-full flex items-center justify-between text-white bg-[#a4c67a] hover:bg-green-600 px-3 sm:px-4 py-2 sm:py-3 rounded-xl font-semibold text-sm sm:text-base shadow-md transition-all duration-300"
+                      className="w-full flex items-center justify-between text-[#9241a9] bg-[#a4c67a] hover:bg-[#9241a9] hover:text-white px-3 sm:px-4 py-2 sm:py-3 rounded-xl font-semibold text-sm sm:text-base shadow-md transition-all duration-300"
                     >
                       <span>{link.name}</span>
                       <HiChevronDown className={`w-5 h-5 ml-2 transition-transform duration-300 ${activeDropdown === link.name ? 'rotate-180' : ''}`} />
@@ -142,7 +142,7 @@ const Navbar = () => {
                           <Link
                             key={idx}
                             to={item.href}
-                            className="block px-3 sm:px-4 py-2 rounded-lg bg-[#a4c67a] text-[#e9ffcd] hover:bg-green-600 hover:text-white font-medium text-xs sm:text-sm shadow transition-all duration-200"
+                            className="block px-3 sm:px-4 py-2 rounded-lg bg-[#a4c67a] text-[#9241a9] hover:bg-[#9241a9] hover:text-white font-medium text-xs sm:text-sm shadow transition-all duration-200"
                           >
                             {item.name}
                           </Link>
@@ -153,7 +153,7 @@ const Navbar = () => {
                 ) : (
                   <Link
                     to={link.href}
-                    className="block w-full text-white bg-[#a4c67a] hover:bg-[#7a9955] px-3 sm:px-4 py-2 sm:py-3 rounded-xl font-semibold text-sm sm:text-base shadow-md transition-all duration-300"
+                    className="block w-full text-[#9241a9] bg-[#a4c67a] hover:bg-[#9241a9] hover:text-white px-3 sm:px-4 py-2 sm:py-3 rounded-xl font-semibold text-sm sm:text-base shadow-md transition-all duration-300"
                   >
                     {link.name}
                   </Link>

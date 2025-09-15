@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaTiktok, FaLinkedinIn, FaArrowRight, FaEnvelope, FaPhone, FaMapMarkerAlt, FaLeaf, FaWhatsapp } from 'react-icons/fa';
-import logo from '../assets/earth.png';
+import logo from '../assets/agrolix-logo.png';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {

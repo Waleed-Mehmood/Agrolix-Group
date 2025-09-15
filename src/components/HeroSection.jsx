@@ -124,11 +124,11 @@
 // Slider.js
 import React, { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import slide1 from "../assets/homepage/banners/banner1.jpg";
-import slide2 from "../assets/homepage/banners/banner2.jpg";
-import slide3 from "../assets/homepage/banners/banner3.jpg";
-import slide4 from "../assets/homepage/banners/banner4.jpg";
-import slide5 from "../assets/homepage/banners/banner5.jpg";
+import slide1 from "../assets/homepage/banners/banner1.png";
+import slide2 from "../assets/homepage/banners/banner2.png";
+import slide3 from "../assets/homepage/banners/banner3.png";
+import slide4 from "../assets/homepage/banners/banner4.png";
+import slide5 from "../assets/homepage/banners/banner5.png";
 
 
 const slides = [
