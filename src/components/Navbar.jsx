@@ -17,7 +17,7 @@ const Navbar = () => {
 
   const navLinks = [
   { name: 'HOME', href: '/' },
-  { name: 'ABOUT US', href: '/about' },
+  { name: 'ABOUT', href: '/about' },
     { 
       name: 'OUR CONTRIBUTION', 
       href: '#contribution',
@@ -43,12 +43,12 @@ const Navbar = () => {
   { name: 'CROPS', href: '/crops' },
   { name: 'COMPANIES', href: '/companies' },
   { name: 'CAREER', href: '/career' },
-  { name: 'CONTACT US', href: '/contact' }
+  { name: 'CONTACT', href: '/contact' }
   ];
 
   return (
-    <nav className="bg-gradient-to-r from-[#7a9955] via-[#7a9955] to-[#7a9955] shadow-lg z-50 py-4 lg:py-5 ">
-      <div className="mx-auto px-4 sm:px-6 lg:px-6">
+    <nav className="bg-gradient-to-r from-[#7a9955] via-[#7a9955] to-[#7a9955] shadow-lg z-50 py-4 xl:py-5 ">
+      <div className="mx-auto px-4 sm:px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo Section */}
           <div className="flex items-center space-x-3">
@@ -58,7 +58,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-1">
+          <div className="hidden xl:flex items-center space-x-1">
             {navLinks.map((link, index) => (
               <div key={index} className="relative group">
                 {link.dropdown ? (
@@ -87,8 +87,7 @@ const Navbar = () => {
                 ) : (
                   <Link
                     to={link.href}
-                    className="text-white hover:bg-white hover:text-[#7a9955] px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 relative overflow-hidden group"
-              qawsq    >
+                    className="text-white hover:bg-white hover:text-[#7a9955] px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 relative overflow-hidden group">
                     <span className="relative z-10">{link.name}</span>
                     <div className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                   </Link>
@@ -98,7 +97,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile menu button (only hamburger, cross moved to overlay) */}
-          <div className="lg:hidden">
+          <div className="xl:hidden">
             {!isMenuOpen && (
               <button
                 onClick={toggleMenu}
@@ -112,7 +111,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation Menu */}
         <div
-          className={`lg:hidden fixed top-0 left-0 w-full h-full animate__animated ${isMenuOpen ? 'animate__fadeInDown' : 'animate__fadeOutUp'} ${isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'} transition-all duration-500 z-50`}
+          className={`xl:hidden fixed top-0 left-0 w-full h-full animate__animated ${isMenuOpen ? 'animate__fadeInDown' : 'animate__fadeOutUp'} ${isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'} transition-all duration-500 z-50`}
           style={{ backdropFilter: 'blur(12px)' }}
         >
           {/* Cross button inside overlay */}
@@ -168,7 +167,7 @@ const Navbar = () => {
       {/* Backdrop for mobile menu */}
       {isMenuOpen && (
         <div 
-          className="lg:hidden fixed inset-0 bg-black bg-opacity-40 backdrop-blur-sm z-40"
+          className="xl:hidden fixed inset-0 bg-black bg-opacity-40 backdrop-blur-sm z-40"
           onClick={() => setIsMenuOpen(false)}
         ></div>
       )}

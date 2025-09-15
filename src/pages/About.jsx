@@ -8,8 +8,10 @@ import { motion, useMotionValue, useSpring } from "framer-motion";
 import "animate.css";
 import ceoImg from "../assets/about-us/Ceo.jpg";
 import haseebImg from "../assets/about-us/haseeb-nasir.jpg";
+import shoukatImg from "../assets/about-us/shoukat-hayat.jpg";
 import aboutImg from "../assets/about-us/about2.webp";
 import agrolixVideo from "../assets/agrolix-video.mp4";
+import agrolixgroup from "../assets/homepage/logo-images/agrolix-group.png";
 import {
   FaLeaf,
   FaBullseye,
@@ -93,25 +95,37 @@ const AboutUs = () => {
       <Navbar />
       <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-50 animate__animated animate__fadeIn">
         {/* Hero Section */}
-        <section className="relative text-white py-16 md:py-20 px-4 md:px-6 animate__animated animate__fadeInDown" style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%237a9955;stop-opacity:1" /><stop offset="100%" style="stop-color:%237a9955;stop-opacity:1" /></linearGradient></defs><rect width="100%" height="100%" fill="url(%23grad1)"/><path d="M0,200 Q300,100 600,200 T1200,200 L1200,400 L0,400 Z" fill="%23065F46" opacity="0.3"/><circle cx="200" cy="150" r="20" fill="%23FFFFFF" opacity="0.1"/><circle cx="800" cy="120" r="15" fill="%23FFFFFF" opacity="0.1"/><circle cx="1000" cy="180" r="25" fill="%23FFFFFF" opacity="0.1"/></svg>')`
-        }}>
+        <section
+          className="relative text-white py-16 md:py-20 px-4 md:px-6 animate__animated animate__fadeInDown bg-no-repeat bg-cover bg-center"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.4)), url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 400\"><defs><linearGradient id=\"grad1\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\"><stop offset=\"0%\" style=\"stop-color:%237a9955;stop-opacity:1\" /><stop offset=\"100%\" style=\"stop-color:%237a9955;stop-opacity:1\" /></linearGradient></defs><rect width=\"100%\" height=\"100%\" fill=\"url(%23grad1)\"/><path d=\"M0,200 Q300,100 600,200 T1200,200 L1200,400 L0,400 Z\" fill=\"%23065F46\" opacity=\"0.3\"/><circle cx=\"200\" cy=\"150\" r=\"20\" fill=\"%23FFFFFF\" opacity=\"0.1\"/><circle cx=\"800\" cy=\"120\" r=\"15\" fill=\"%23FFFFFF\" opacity=\"0.1\"/><circle cx=\"1000\" cy=\"180\" r=\"25\" fill=\"%23FFFFFF\" opacity=\"0.1\"/></svg>')`,
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        >
           <div className="absolute inset-0 bg-black/20"></div>
           <div className="relative max-w-6xl mx-auto text-center">
-            <div className="flex justify-center mb-6">
-              <FaLeaf className="w-16 h-16 text-[#a4c67a]" />
-            </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Agrolix Group
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
-              Empowering Pakistan's farming community since 2000 with quality
-              agrochemical solutions
-            </p>
-            <div className="flex justify-center items-center space-x-4 text-[#a4c67a]">
-              <span className="text-lg">Est. 2000</span>
-              <div className="w-2 h-2 bg-[#a4c67a] rounded-full"></div>
-              <span className="text-lg">Bahawalpur, Pakistan</span>
+            <div className="flex flex-col md:flex-row items-center md:items-start md:text-left gap-0 md:gap-8">
+              <img
+                src={agrolixgroup}
+                alt="Agrolix Group Logo"
+                className="w-32 h-32 md:w-48 md:h-48 object-contain mb-4 md:mb-0 md:mr-8"
+              />
+              <div className="flex-1">
+                <h1 className="text-5xl md:text-6xl font-bold mb-6">
+                  Agrolix Group
+                </h1>
+                <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto md:mx-0 leading-relaxed">
+                  Empowering Pakistan's farming community since 2000 with quality
+                  agrochemical solutions
+                </p>
+                <div className="flex justify-center md:justify-start items-center space-x-4 text-[#a4c67a]">
+                  <span className="text-lg">Est. 2000</span>
+                  <div className="w-2 h-2 bg-[#a4c67a] rounded-full"></div>
+                  <span className="text-lg">Bahawalpur, Pakistan</span>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -355,9 +369,9 @@ const AboutUs = () => {
           </div>
         </section>
 
-        {/* CEO & Managing Director Message Sections */}
+        {/* CEO, Managing Director & General Manager Message Sections */}
         <section className="py-10 md:py-16 px-4 md:px-6 bg-gradient-to-br from-green-100 to-blue-100 animate__animated animate__fadeInUpBig">
-          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
             {/* CEO Card */}
             <div className="bg-white rounded-3xl shadow-2xl p-6 md:p-8 flex flex-col items-center hover:shadow-green-300 transition-shadow duration-300 w-full">
               <div className="w-28 md:w-32 h-28 md:h-32 mb-4 md:mb-6 rounded-full overflow-hidden border-4 border-primary shadow-lg">
@@ -367,7 +381,7 @@ const AboutUs = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h2 className="text-lg md:text-2xl font-bold text-primary mb-1 md:mb-2 tracking-wide">
+              <h2 className="text-lg md:text-xl font-bold text-primary mb-1 md:mb-2 tracking-wide">
                 Message of CEO
               </h2>
               <h3 className="text-base md:text-lg font-semibold text-gray-700 mb-2 md:mb-4">
@@ -396,7 +410,7 @@ const AboutUs = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h2 className="text-lg md:text-2xl font-bold text-primary mb-1 md:mb-2 tracking-wide">
+              <h2 className="text-lg md:text-xl font-bold text-primary mb-1 md:mb-2 tracking-wide">
                 Message of Managing Director
               </h2>
               <h3 className="text-base md:text-lg font-semibold text-gray-700 mb-2 md:mb-4">
@@ -419,6 +433,25 @@ const AboutUs = () => {
                 Together, we’ll cultivate success and foster a thriving
                 agricultural community. Here’s to a future where your fields
                 flourish and your efforts yield remarkable results.
+              </p>
+            </div>
+            {/* General Manager Card */}
+            <div className="bg-white rounded-3xl shadow-2xl p-6 md:p-8 flex flex-col items-center hover:shadow-green-300 transition-shadow duration-300 w-full">
+              <div className="w-28 md:w-32 h-28 md:h-32 mb-4 md:mb-6 rounded-full overflow-hidden border-4 border-primary shadow-lg flex items-center justify-center bg-gray-100">
+                <img
+                  src={shoukatImg}
+                  alt="General Manager Shoukat Hayat Baloch"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h2 className="text-lg md:text-xl font-bold text-primary mb-1 md:mb-2 tracking-wide">
+                Message of General Manager
+              </h2>
+              <h3 className="text-base md:text-lg font-semibold text-gray-700 mb-2 md:mb-4">
+                SHOUKAT HAYAT BALOCH
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-sm md:text-base text-justify">
+                At Agrolix Group, we are committed to building a sustainable and forward-thinking future for agriculture. Guided by our General Manager, whose experience and leadership ensure both strategic growth and operational excellence, we focus on empowering farmers, strengthening partnerships, and delivering solutions that truly make a difference in the industry.
               </p>
             </div>
           </div>

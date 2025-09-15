@@ -30,12 +30,12 @@ const TestimonialsSection = () => {
     },
     {
       id: 3,
-      name: "Fatima Bibi",
+      name: "Bilal Rashid",
       location: "Gujranwala, Punjab",
       profession: "Vegetable Farmer",
-  image: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=128&q=80", // Female
+      image: "https://images.unsplash.com/photo-1680066130510-01ab499f4ac4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFraXN0YW5pJTIwbWVuc3xlbnwwfHwwfHx8MA%3D%3D", // Male
       rating: 5,
-  review: "Agrolix's organic fertilizers have given amazing results in my vegetable farming. Both quality and quantity have improved.",
+      review: "Agrolix's organic fertilizers have given amazing results in my vegetable farming. Both quality and quantity have improved.",
       cropType: "Vegetables",
       acres: "15 acres"
     },
@@ -44,7 +44,7 @@ const TestimonialsSection = () => {
       name: "Malik Usman",
       location: "Kasur, Punjab",
       profession: "Rice Farmer",
-  image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=facearea&w=128&q=80", // Male (Malik Usman)
+  image: "https://images.unsplash.com/photo-1669804227127-0876cb0f5474?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fHBha2lzdGFuaSUyMG1lbnN8ZW58MHx8MHx8fDA%3D", // Male (Malik Usman)
       rating: 5,
   review: "Agrolix's products are the best for pest control in rice farming. The field team's guidance gave proper results.",
       cropType: "Rice",
@@ -52,10 +52,10 @@ const TestimonialsSection = () => {
     },
     {
       id: 5,
-      name: "Zainab Ali",
+      name: "Nouman Iqbal",
       location: "Okara, Punjab",
       profession: "Progressive Farmer",
-  image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=facearea&w=128&q=80", // Female
+  image: "https://images.unsplash.com/photo-1628264046730-ddaf1eb3b2ae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njh8fHBha2lzdGFuaSUyMG1lbnN8ZW58MHx8MHx8fDA%3D", // Female
       rating: 5,
   review: "With modern farming techniques and Agrolix's innovative products, my farming profitability has doubled.",
       cropType: "Mixed Crops",

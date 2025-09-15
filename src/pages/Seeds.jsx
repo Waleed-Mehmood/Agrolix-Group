@@ -19,6 +19,7 @@ import {
   FaIndustry,
 } from "react-icons/fa";
 import Navbar from "../components/Navbar";
+import passionAgroLogo from "../assets/homepage/logo-images/agro-passion-seeds.png";
 import Footer from "../components/Footer";
 
 const Seeds = () => {
@@ -102,33 +103,39 @@ const Seeds = () => {
   ];
 
   return (
-    <div>
-      <Navbar />
-      <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-50">
-        {/* Hero Section */}
-        <div className="text-center mb-16 px-4 md:px-8 lg:px-12">
-            <div className="relative text-center mb-8 sm:mb-12 py-8 md:py-12 px-4 md:px-10 lg:px-16 bg-gradient-to-r from-green-50 via-white to-green-50 rounded-2xl md:rounded-3xl shadow-md overflow-hidden">
-              <div className="absolute -top-10 -left-10 w-32 h-32 md:w-40 md:h-40 bg-green-100 rounded-full opacity-30 blur-2xl z-0"></div>
-              <div className="absolute -bottom-10 -right-10 w-32 h-32 md:w-40 md:h-40 bg-green-200 rounded-full opacity-20 blur-2xl z-0"></div>
-              <div className="relative flex flex-col md:flex-row items-center justify-center mb-3 md:mb-5 z-10 gap-2 md:gap-6">
-                <div className="bg-gradient-to-br from-[#dcfab8] to-[#a4c67a] p-2 md:p-4 rounded-full shadow-lg animate-spin-slow mb-2 md:mb-0">
-                  <FaSeedling className="w-7 h-7 md:w-10 md:h-10 text-[#7a9955]" />
-                </div>
-                <h1 className="text-2xl xs:text-3xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#a4c67a] via-[#6f8b4c] to-[#a4c67a] drop-shadow-lg leading-tight">
-                  Passion Agro Seeds
-                </h1>
-              </div>
-              <div className="flex flex-col items-center z-10 relative">
-                <p className="text-base xs:text-lg md:text-2xl text-[#7a9955] font-semibold mb-2 tracking-wide text-center max-w-xl">
-                  Trusted agricultural partner delivering high-quality seeds
-                </p>
-                <span className="block w-16 md:w-32 h-1 bg-gradient-to-r from-[#a4c67a] via-[#6f8b4c] to-[#a4c67a] rounded-full mb-2"></span>
-                <span className="text-[#7a9955] text-xs md:text-sm italic">
-                  Maximum productivity and profitability for farmers
-                </span>
-              </div>
-            </div>
-          </div>
+  <div>
+    <Navbar />
+    <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-50">
+    {/* Hero Section */}
+    <div className="mb-16 px-4 md:px-8 lg:px-12 mt-12">
+      <div className="relative flex flex-col md:flex-row items-center justify-between mb-8 sm:mb-12 py-8 md:py-12 px-4 md:px-10 lg:px-16 bg-gradient-to-r from-green-50 via-white to-green-50 rounded-2xl md:rounded-3xl shadow-md overflow-hidden">
+      <div className="absolute -top-10 -left-10 w-32 h-32 md:w-40 md:h-40 bg-green-100 rounded-full opacity-30 blur-2xl z-0"></div>
+      <div className="absolute -bottom-10 -right-10 w-32 h-32 md:w-40 md:h-40 bg-green-200 rounded-full opacity-20 blur-2xl z-0"></div>
+
+      {/* Left: Image */}
+      <div className="flex-shrink-0 flex justify-center items-center w-full md:w-1/3 mb-6 md:mb-0">
+        <img
+          src={passionAgroLogo}
+          alt="Passion Agro Seeds Logo"
+          className="w-32 h-32 md:w-48 md:h-48 object-contain"
+        />
+      </div>
+
+      {/* Right: Content */}
+      <div className="flex flex-col justify-center items-start w-full md:w-2/3 z-10">
+        <h1 className="text-2xl xs:text-3xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#a4c67a] via-[#6f8b4c] to-[#a4c67a] drop-shadow-lg leading-tight mb-3 md:mb-5 text-left">
+        Passion Agro Seeds
+        </h1>
+        <p className="text-base xs:text-lg md:text-2xl text-[#7a9955] font-semibold mb-2 tracking-wide text-left max-w-xl">
+        Trusted agricultural partner delivering high-quality seeds
+        </p>
+        <span className="block w-16 md:w-32 h-1 bg-gradient-to-r from-[#a4c67a] via-[#6f8b4c] to-[#a4c67a] rounded-full mb-2"></span>
+        <span className="text-[#7a9955] text-xs md:text-sm italic text-left">
+        Maximum productivity and profitability for farmers
+        </span>
+      </div>
+      </div>
+    </div>
 
         {/* Main Content */}
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12 py-16">
