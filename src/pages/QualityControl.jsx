@@ -1,7 +1,9 @@
 import { FaCheckCircle, FaAward, FaShieldAlt, FaMicroscope } from 'react-icons/fa';
-import qualityControlImg from '../assets/qualitycontrol/lab.jpg';
+import qualityControlImg1 from '../assets/qualitycontrol/lab1.jpg';
+import qualityControlImg2 from '../assets/qualitycontrol/lab2.jpg';
+import qualityControlImg3 from '../assets/qualitycontrol/lab3.jpg';
 import bannerImg from '../assets/qualitycontrol/qualitycontrol1.webp';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import certificateImg from '../assets/qualitycontrol/Accreditation-certificate.jpg';
 import Navbar from '../components/Navbar';
@@ -9,6 +11,21 @@ import Footer from '../components/Footer';
 
 export default function QualityControl() {
   const [showModal, setShowModal] = useState(false);
+  // Image slider state
+  const sliderImages = [qualityControlImg1, qualityControlImg2, qualityControlImg3];
+  const [currentImg, setCurrentImg] = useState(0);
+
+  const nextImg = () => setCurrentImg((prev) => (prev + 1) % sliderImages.length);
+  const prevImg = () => setCurrentImg((prev) => (prev - 1 + sliderImages.length) % sliderImages.length);
+
+  // Auto-slide effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImg((prev) => (prev + 1) % sliderImages.length);
+    }, 3000); // 3 seconds
+    return () => clearInterval(interval);
+  }, [sliderImages.length]);
+
   return (
     <div>
       <Navbar/>
@@ -221,7 +238,7 @@ export default function QualityControl() {
               </motion.div>
             </motion.div>
 
-            {/* Image Area */}
+            {/* Image Area with Slider */}
             <motion.div
               className="relative"
               initial={{ opacity: 0, x: 40 }}
@@ -229,17 +246,40 @@ export default function QualityControl() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              <div
-                className="rounded-2xl p-4 sm:p-8 h-64 sm:h-80 md:h-96 flex items-center justify-center shadow-lg bg-center bg-cover relative"
-                style={{
-                  backgroundImage: `url(${qualityControlImg})`
-                }}
-              >
+              <div className="rounded-2xl p-4 sm:p-8 h-64 sm:h-80 md:h-96 flex items-center justify-center shadow-lg bg-center bg-cover relative overflow-hidden">
                 {/* Overlay Layer */}
-                <div className="absolute inset-0 bg-black bg-opacity-40 rounded-2xl"></div>
-                {/* Laboratory Illustration */}
+                <div className="absolute inset-0 bg-black bg-opacity-40 rounded-2xl z-0"></div>
+                {/* Image Slider */}
+                <motion.img
+                  key={currentImg}
+                  src={sliderImages[currentImg]}
+                  alt={`Lab ${currentImg + 1}`}
+                  className="rounded-2xl object-cover w-full h-full absolute inset-0 z-10 transition-all duration-500"
+                  initial={{ opacity: 0, scale: 1.05 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  transition={{ duration: 0.6 }}
+                />
+                {/* Slider Controls */}
+                <button
+                  className="absolute left-2 top-1/2 -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-90 rounded-full p-2 z-20 shadow-md"
+                  onClick={prevImg}
+                  aria-label="Previous Image"
+                  style={{ backdropFilter: 'blur(2px)' }}
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#611b74]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
+                </button>
+                <button
+                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-90 rounded-full p-2 z-20 shadow-md"
+                  onClick={nextImg}
+                  aria-label="Next Image"
+                  style={{ backdropFilter: 'blur(2px)' }}
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#611b74]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                </button>
+                {/* Laboratory Illustration (remains above image) */}
                 <motion.div
-                  className="text-center relative z-10"
+                  className="text-center relative z-30"
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.6, delay: 0.3 }}

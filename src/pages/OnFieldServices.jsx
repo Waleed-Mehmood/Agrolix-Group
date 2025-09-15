@@ -14,6 +14,7 @@ import { MdAgriculture } from "react-icons/md";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import bannerImg from '../assets/onfieldservice/OnFieldService1.jpg';
+import galleryImg from '../assets/gallery/gallery1.jpg';
 
 const OnFieldServices = () => {
   return (
@@ -177,51 +178,20 @@ const OnFieldServices = () => {
           </div>
 
           {/* Mission Statement */}
+          {/* Gallery Image Section (replaces Mission Statement) */}
           <motion.div
-            className="bg-gradient-to-r from-[#ebffd3] to-[#e8ffcd] rounded-2xl p-10 text-center"
+            className="flex justify-center my-12"
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            <motion.div
-              className="flex justify-center mb-6"
-              initial={{ scale: 0 }}
-              whileInView={{ scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-            >
-              <div className="bg-[#7a9955] p-4 rounded-full">
-                <MdAgriculture className="text-4xl text-white" />
-              </div>
-            </motion.div>
-            <motion.h2
-              className="text-3xl font-bold text-gray-800 mb-6"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: 0.3 }}
-            >
-              Our Mission
-            </motion.h2>
-            <motion.p
-              className="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto mb-6"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: 0.4 }}
-            >
-              Our aim is not just to sell products, but to build lasting partnerships based on trust and performance. By addressing pest challenges directly in the field, we empower farmers to improve yield and productivity.
-            </motion.p>
-            <motion.p
-              className="text-xl font-semibold text-[#7a9955]"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: 0.5 }}
-            >
-              Together, we strive for a more prosperous and resilient agricultural future.
-            </motion.p>
+            <img 
+              src={galleryImg} 
+              alt="On Field Service Gallery" 
+              className="rounded-2xl shadow-xl max-w-full h-auto object-cover border-4 border-[#ebffd3]"
+              style={{ maxHeight: '400px' }}
+            />
           </motion.div>
 
           {/* Call to Action */}

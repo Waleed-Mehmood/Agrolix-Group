@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { HiMenu, HiX, HiChevronDown } from 'react-icons/hi';
-import agrolixLogo from '../assets/agrolix-logo.png';
+import agrolixLogo from '../assets/earth.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,13 +47,13 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-gradient-to-r from-[#7a9955] via-[#7a9955] to-[#7a9955] shadow-lg z-50 py-4">
-      <div className="mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="bg-gradient-to-r from-[#7a9955] via-[#7a9955] to-[#7a9955] shadow-lg z-50 py-4 lg:py-5 ">
+      <div className="mx-auto px-4 sm:px-6 lg:px-6">
         <div className="flex justify-between items-center h-16">
           {/* Logo Section */}
           <div className="flex items-center space-x-3">
             <Link to="/">
-              <img src={agrolixLogo} alt="Agrolix Logo" className="w-32 h-24 sm:w-36 sm:h-32 object-contain" />
+              <img src={agrolixLogo} alt="Agrolix Logo" className="w-32 h-24 sm:w-48 sm:h-36 object-contain" />
             </Link>
           </div>
 

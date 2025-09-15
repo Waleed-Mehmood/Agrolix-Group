@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaTiktok, FaLinkedinIn, FaArrowRight, FaEnvelope, FaPhone, FaMapMarkerAlt, FaLeaf, FaWhatsapp } from 'react-icons/fa';
-import logo from '../assets/agrolix-logo.png';
+import logo from '../assets/earth.png';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
@@ -11,9 +11,8 @@ export default function Footer() {
     { name: 'ABOUT US', href: '/about' },
     { name: 'OUR CONTRIBUTION', href: '/on-field-services' },
     { name: 'QUALITY CONTROL', href: '/quality-control' },
-    { name: 'PRODUCTS', href: '#products' },
-    { name: 'SEEDS', href: '#seeds' },
-    { name: 'CROPS', href: '#crops' },
+    { name: 'SEEDS', href: '/seeds' },
+    { name: 'CROPS', href: '/crops' },
     { name: 'COMPANIES', href: '/companies' },
     { name: 'CAREER', href: '/career' },
     { name: 'CONTACT US', href: '/contact' }
@@ -49,35 +48,13 @@ export default function Footer() {
           
           {/* Company Info */}
           <div className="lg:col-span-1 space-y-6">
-            {/* <Link to="/" className="block">
-              <div className="flex items-center space-x-3 group cursor-pointer">
-                <div className="relative">
-                  <img 
-                    src={logo} 
-                    alt="Agrolix Group Logo" 
-                    className="h-16 w-20 shadow-2xl border-3 border-green-300 group-hover:scale-110 transition-transform duration-300" 
-                  />
-                  <div className="absolute -top-1 -right-1 w-4 h-4 bg-green-400 rounded-full animate-pulse"></div>
-                </div>
-                <div>
-                  <h2 className="text-2xl font-bold bg-gradient-to-r from-green-300 to-blue-300 bg-clip-text text-transparent">
-                    Agrolix Group
-                  </h2>
-                  <div className="flex items-center space-x-1 text-green-300 text-base">
-                    <FaLeaf className="w-3 h-3" />
-                    <span>Agricultural Innovation</span>
-                  </div>
-                </div>
-              </div>
-            </Link> */}
-
             <Link to="/" className="block">
               <div className="flex items-center space-x-3 group cursor-pointer">
                 <div className="relative">
                   <img 
                     src={logo} 
                     alt="Agrolix Group Logo" 
-                    className="h-28 w-full" 
+                    className="h-28 w-52" 
                   />
                   <div className="absolute -top-1 -right-1 w-4 h-4 bg-[#e2ffbd] rounded-full animate-pulse"></div>
                 </div>
@@ -132,7 +109,7 @@ export default function Footer() {
             </nav>
           </div>
 
-          {/* Products */}
+          {/* Our Contribution */}
           <div className="space-y-4">
             <h3 className="text-[#a4c67a] font-bold text-lg mb-4 relative">
               Our Contribution
@@ -149,6 +126,38 @@ export default function Footer() {
                   <span>{item.name}</span>
                 </Link>
               ))}
+            </nav>
+
+            {/* Products Section */}
+            <h3 className="text-[#a4c67a] font-bold text-lg mt-8 mb-4 relative">
+              Products
+              <div className="absolute bottom-0 left-0 w-8 h-0.5 bg-gradient-to-r from-green-400 to-transparent"></div>
+            </h3>
+            <nav className="space-y-2">
+              <Link to="/products/fertilizers" className="flex items-center space-x-2 text-gray-300 hover:text-[#a4c67a] hover:translate-x-1 transition-all duration-200 group text-base">
+                <FaArrowRight className="w-3 h-3 text-[#a4c67a] group-hover:text-[#b2d18c] transition-colors" />
+                <span>Fertilizers</span>
+              </Link>
+              <Link to="/products/fungicides" className="flex items-center space-x-2 text-gray-300 hover:text-[#a4c67a] hover:translate-x-1 transition-all duration-200 group text-base">
+                <FaArrowRight className="w-3 h-3 text-[#a4c67a] group-hover:text-[#b2d18c] transition-colors" />
+                <span>Fungicides</span>
+              </Link>
+              <Link to="/products/granules" className="flex items-center space-x-2 text-gray-300 hover:text-[#a4c67a] hover:translate-x-1 transition-all duration-200 group text-base">
+                <FaArrowRight className="w-3 h-3 text-[#a4c67a] group-hover:text-[#b2d18c] transition-colors" />
+                <span>Granules</span>
+              </Link>
+              <Link to="/products/herbicides" className="flex items-center space-x-2 text-gray-300 hover:text-[#a4c67a] hover:translate-x-1 transition-all duration-200 group text-base">
+                <FaArrowRight className="w-3 h-3 text-[#a4c67a] group-hover:text-[#b2d18c] transition-colors" />
+                <span>Herbicides</span>
+              </Link>
+              <Link to="/products/insecticides" className="flex items-center space-x-2 text-gray-300 hover:text-[#a4c67a] hover:translate-x-1 transition-all duration-200 group text-base">
+                <FaArrowRight className="w-3 h-3 text-[#a4c67a] group-hover:text-[#b2d18c] transition-colors" />
+                <span>Insecticides</span>
+              </Link>
+              <Link to="/products/micronutrients" className="flex items-center space-x-2 text-gray-300 hover:text-[#a4c67a] hover:translate-x-1 transition-all duration-200 group text-base">
+                <FaArrowRight className="w-3 h-3 text-[#a4c67a] group-hover:text-[#b2d18c] transition-colors" />
+                <span>Micro Nutrients</span>
+              </Link>
             </nav>
           </div>
 

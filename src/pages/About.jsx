@@ -9,6 +9,7 @@ import "animate.css";
 import ceoImg from "../assets/about-us/Ceo.jpg";
 import haseebImg from "../assets/about-us/haseeb-nasir.jpg";
 import aboutImg from "../assets/about-us/about2.webp";
+import agrolixVideo from "../assets/agrolix-video.mp4";
 import {
   FaLeaf,
   FaBullseye,
@@ -85,7 +86,7 @@ const AboutUs = () => {
     "Fertilizers",
   ];
 
-  const facilities = ["EC", "SC", "WP", "WS", "WDG"];
+  const facilities = ["EC", "SC", "WP", "GR", "WDG"];
 
   return (
     <div>
@@ -144,11 +145,17 @@ const AboutUs = () => {
                 </p>
               </div>
               <div className="flex justify-center items-center mt-8 md:mt-0">
-                <img
-                  src={aboutImg}
-                  alt="Agrolix Group Office"
+                <video
+                  src={agrolixVideo}
+                  controls
+                  autoPlay
+                  loop
+                  muted
                   className="rounded-2xl shadow-xl w-full max-w-sm md:max-w-lg object-cover"
-                />
+                  poster={aboutImg}
+                >
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </div>
           </div>
@@ -366,7 +373,7 @@ const AboutUs = () => {
               <h3 className="text-base md:text-lg font-semibold text-gray-700 mb-2 md:mb-4">
                 NASIR SHAKEEL KAHLOON
               </h3>
-              <p className="text-gray-600 leading-relaxed text-sm md:text-base text-center mb-1 md:mb-2">
+              <p className="text-gray-600 leading-relaxed text-sm md:text-base text-justify mb-1 md:mb-2">
                 With over{" "}
                 <span className="font-bold text-green-700">32 years</span> of
                 experience in the agrochemical industry, my journey began in
@@ -395,20 +402,20 @@ const AboutUs = () => {
               <h3 className="text-base md:text-lg font-semibold text-gray-700 mb-2 md:mb-4">
                 HASEEB NASIR KAHLOON
               </h3>
-              <p className="text-gray-600 leading-relaxed text-sm md:text-base text-center mb-1 md:mb-2">
+              <p className="text-gray-600 leading-relaxed text-sm md:text-base text-justify mb-1 md:mb-2">
                 I’m thrilled to connect with you as we embark on a journey to
                 revolutionize pest management and elevate agriculture. As a
                 young and dynamic leader in this field, my mission is to blend
                 innovation with commitment to delivering the highest quality
                 solutions for pest control.
               </p>
-              <p className="text-gray-600 leading-relaxed text-sm md:text-base text-center mb-1 md:mb-2">
+              <p className="text-gray-600 leading-relaxed text-sm md:text-base text-justify mb-1 md:mb-2">
                 We believe in the power of collaboration and innovation. Every
                 day, we strive to push boundaries and set new standards in the
                 industry. Our goal is to ensure that you not only meet your
                 agricultural goals but exceed them with confidence.
               </p>
-              <p className="text-gray-600 leading-relaxed text-sm md:text-base text-center">
+              <p className="text-gray-600 leading-relaxed text-sm md:text-base text-justify">
                 Together, we’ll cultivate success and foster a thriving
                 agricultural community. Here’s to a future where your fields
                 flourish and your efforts yield remarkable results.

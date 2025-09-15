@@ -107,10 +107,6 @@ const Granules = () => {
                     alt={granule.name}
                     className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110 bg-white"
                   />
-                  {/* Gradient Overlay */}
-                  <div
-                    className={`absolute inset-0 bg-gradient-to-t ${granule.bgcolor} opacity-20`}
-                  ></div>
                 </div>
                 {/* Image Popup Modal */}
                 {modalOpen && (
