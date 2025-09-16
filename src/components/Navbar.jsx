@@ -65,7 +65,7 @@ const Navbar = () => {
                   <div className="relative">
                     <button
                       onClick={() => handleDropdownToggle(link.name)}
-                      className="text-[#9241a9] hover:bg-[#9241a9] hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 flex items-center space-x-1 group"
+                      className="text-[#9241a9] hover:bg-[#9241a9] hover:text-white px-2 py-2 rounded-md text-sm font-bold transition-all duration-300 flex items-center space-x-1 group"
                     >
                       <span>{link.name}</span>
                         <HiChevronDown className="w-4 h-4 group-hover:rotate-180 transition-transform duration-300" />
@@ -87,7 +87,7 @@ const Navbar = () => {
                 ) : (
                   <Link
                     to={link.href}
-                    className="text-[#9241a9] hover:bg-[#9241a9] hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 relative overflow-hidden group">
+                    className="text-[#9241a9] hover:bg-[#9241a9] hover:text-white px-3 py-2 rounded-md text-sm font-bold transition-all duration-300 relative overflow-hidden group">
                     <span className="relative z-10">{link.name}</span>
                     <div className="absolute inset-0 bg-[#9241a9] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                   </Link>
@@ -131,7 +131,7 @@ const Navbar = () => {
                   <div className="">
                     <button
                       onClick={() => handleDropdownToggle(link.name)}
-                      className="w-full flex items-center justify-between text-[#9241a9] bg-[#f2c3ff] hover:bg-[#9241a9] hover:text-white px-3 sm:px-4 py-2 sm:py-3 rounded-xl font-semibold text-sm sm:text-base shadow-md transition-all duration-300"
+                      className="w-full flex items-center justify-between text-[#9241a9] bg-[#f2c3ff] hover:bg-[#9241a9] hover:text-white px-3 sm:px-4 py-2 sm:py-3 rounded-xl font-bold text-sm sm:text-base shadow-md transition-all duration-300"
                     >
                       <span>{link.name}</span>
                       <HiChevronDown className={`w-5 h-5 ml-2 transition-transform duration-300 ${activeDropdown === link.name ? 'rotate-180' : ''}`} />
@@ -142,7 +142,7 @@ const Navbar = () => {
                           <Link
                             key={idx}
                             to={item.href}
-                            className="block px-3 sm:px-4 py-2 rounded-lg bg-[#f2c3ff] text-[#9241a9] hover:bg-[#9241a9] hover:text-white font-medium text-xs sm:text-sm shadow transition-all duration-200"
+                            className="block px-3 sm:px-4 py-2 rounded-lg bg-[#f2c3ff] text-[#9241a9] hover:bg-[#9241a9] hover:text-white font-bold text-xs sm:text-sm shadow transition-all duration-200"
                           >
                             {item.name}
                           </Link>
@@ -153,7 +153,7 @@ const Navbar = () => {
                 ) : (
                   <Link
                     to={link.href}
-                    className="block w-full text-[#9241a9] bg-[#f2c3ff] hover:bg-[#9241a9] hover:text-white px-3 sm:px-4 py-2 sm:py-3 rounded-xl font-semibold text-sm sm:text-base shadow-md transition-all duration-300"
+                    className="block w-full text-[#9241a9] bg-[#f2c3ff] hover:bg-[#9241a9] hover:text-white px-3 sm:px-4 py-2 sm:py-3 rounded-xl font-bold text-sm sm:text-base shadow-md transition-all duration-300"
                   >
                     {link.name}
                   </Link>
