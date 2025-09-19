@@ -68,7 +68,7 @@ const AboutUs = () => {
                 Today, the Agrolix group Consists of Agrolix Chemical Industry, Passion Agro Pakistan, Passion Agro Seeds, and a wide network of Franchises with trusted dealers under the umbrella of Arz e Pak.
               </p>
               <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-                Agrolix Group has a state-of-the-art office and production plants ( EC, SC, WP, WS, WDG,) we deal in all kinds of products Insecticides, Weedicides, Fungicides, Micronutrients, and Granules. 
+                Agrolix Group has a state-of-the-art office and production plants ( EC, SC, WP, GR, WDG,) we deal in all kinds of products Insecticides, Weedicides, Fungicides, Micronutrients, and Granules. 
               </p>
               <div className="pt-0">
                 <Link

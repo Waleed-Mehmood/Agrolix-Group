@@ -9,6 +9,7 @@ import { motion, useMotionValue, useSpring } from "framer-motion";
 import "animate.css";
 import ceoImg from "../assets/about-us/Ceo.jpg";
 import haseebImg from "../assets/about-us/haseeb-nasir.jpg";
+import shoukatImg from "../assets/about-us/shoukat-hayat.jpg";
 import aboutImg from "../assets/about-us/about2.webp";
 import agrolixVideo from "../assets/agrolix-video.mp4";
 import {
@@ -361,9 +362,9 @@ const AboutUs = () => {
           </div>
         </section>
 
-        {/* CEO & Managing Director Message Sections */}
+        {/* CEO, Managing Director & General Manager Message Sections */}
         <section className="py-10 md:py-16 px-4 md:px-6 bg-gradient-to-br from-green-100 to-blue-100 animate__animated animate__fadeInUpBig">
-          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+          <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-10">
             {/* CEO Card */}
             <div className="bg-white rounded-3xl shadow-2xl p-6 md:p-8 flex flex-col items-center hover:shadow-green-300 transition-shadow duration-300 w-full">
               <div className="w-28 md:w-32 h-28 md:h-32 mb-4 md:mb-6 rounded-full overflow-hidden border-4 border-primary shadow-lg">
@@ -373,7 +374,7 @@ const AboutUs = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h2 className="text-lg md:text-2xl font-bold text-primary mb-1 md:mb-2 tracking-wide">
+              <h2 className="text-lg md:text-2xl font-bold text-primary mb-1 md:mb-2 tracking-wide text-center">
                 Message of CEO
               </h2>
               <h3 className="text-base md:text-lg font-semibold text-gray-700 mb-2 md:mb-4">
@@ -402,7 +403,7 @@ const AboutUs = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h2 className="text-lg md:text-2xl font-bold text-primary mb-1 md:mb-2 tracking-wide">
+              <h2 className="text-lg md:text-2xl font-bold text-primary mb-1 md:mb-2 tracking-wide text-center">
                 Message of Managing Director
               </h2>
               <h3 className="text-base md:text-lg font-semibold text-gray-700 mb-2 md:mb-4">
@@ -425,6 +426,25 @@ const AboutUs = () => {
                 Together, we’ll cultivate success and foster a thriving
                 agricultural community. Here’s to a future where your fields
                 flourish and your efforts yield remarkable results.
+              </p>
+            </div>
+            {/* General Manager Card */}
+            <div className="bg-white rounded-3xl shadow-2xl p-6 md:p-8 flex flex-col items-center hover:shadow-green-300 transition-shadow duration-300 w-full">
+              <div className="w-28 md:w-32 h-28 md:h-32 mb-4 md:mb-6 rounded-full overflow-hidden border-4 border-primary shadow-lg flex items-center justify-center bg-gray-100">
+                <img
+                  src={shoukatImg}
+                  alt="Managing Director Haseeb Nasir Kahlon"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h2 className="text-lg md:text-2xl font-bold text-primary mb-1 md:mb-2 tracking-wide text-center">
+                Message of General Manager
+              </h2>
+              <h3 className="text-base md:text-lg font-semibold text-gray-700 mb-2 md:mb-4 text-center">
+                SHOUKAT HAYAT BALOCH
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-sm md:text-base text-justify">
+                At Agrolix Group, we are committed to building a sustainable and forward-thinking future for agriculture. Guided by our General Manager, whose experience and leadership ensure both strategic growth and operational excellence, we focus on empowering farmers, strengthening partnerships, and delivering solutions that truly make a difference in the industry.
               </p>
             </div>
           </div>

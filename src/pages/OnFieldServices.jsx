@@ -15,6 +15,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import bannerImg from '../assets/onfieldservice/OnFieldService1.jpg';
 import galleryImg from '../assets/gallery/gallery1.jpg';
+import { Link } from "react-router-dom";
 
 const OnFieldServices = () => {
   return (
@@ -202,14 +203,15 @@ const OnFieldServices = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            <motion.button
-              className="bg-[#611b74] hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors duration-300 shadow-lg hover:shadow-xl"
-              whileHover={{ scale: 1.08, backgroundColor: "#611b74" }}
-              whileTap={{ scale: 0.97 }}
-              onClick={() => window.location.href = '/contact'}
-            >
-              Partner With Us Today
-            </motion.button>
+            <Link to="/contact">
+              <motion.button
+                className="bg-[#611b74] hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors duration-300 shadow-lg hover:shadow-xl"
+                whileHover={{ scale: 1.08, backgroundColor: "#611b74" }}
+                whileTap={{ scale: 0.97 }}
+              >
+                Partner With Us Today
+              </motion.button>
+            </Link>
           </motion.div>
         </motion.div>
   </motion.div>
